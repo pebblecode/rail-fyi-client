@@ -7,8 +7,8 @@ gulp.task('deploy', ['prod'], function() {
 
   const publisher = awspublish.create({
     region: 'eu-west-1',
-    accessKeyId: 'AKIAJPDFE2Z4BFX2WCIQ',
-    secretAccessKey: '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',
+    accessKeyId: '',
+    secretAccessKey: '',
     params: {
       Bucket: 'rail-fyi'
     }
