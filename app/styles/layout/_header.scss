@@ -1,0 +1,13 @@
+header {
+  background-color: $background--dark;
+  color: $font-color--light;
+  height: 75px;
+  display: flex;
+
+  .logo {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

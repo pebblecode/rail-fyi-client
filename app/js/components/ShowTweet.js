@@ -1,8 +1,8 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 
-class ShowTweet extends React.Component {
+class ShowTweet extends Component {
   constructor(props) {
     super(props);
 

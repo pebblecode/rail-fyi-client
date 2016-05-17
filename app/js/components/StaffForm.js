@@ -1,9 +1,9 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 import ShowTweet from './ShowTweet';
 
-class StaffForm extends React.Component {
+class StaffForm extends Component {
   constructor(props) {
     super(props);
 

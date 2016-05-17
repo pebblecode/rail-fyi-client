@@ -1,15 +1,16 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
+
 import stationList from '../data/station-list';
-class NearestStation extends React.Component {
+
+class NearestStation extends Component {
 
   constructor(props) {
     super(props);
     this.stationList = stationList;
     this.state = {};
     this._findNearestLocation();
-
   }
 
   _determineDistance(lat1, lon1, lat2, lon2) {
@@ -63,7 +64,7 @@ class NearestStation extends React.Component {
   }
 
   render() {
-    let nearest = <p>Nearest station: <a href={this.state.nearestCode}>{this.state.nearestName}</a> {this.state.distance} km</p>;
+    const nearest = <p>Nearest station: <a href={this.state.nearestCode}>{this.state.nearestName}</a> {this.state.distance} km</p>;
     return (
       <div>
         {this.state.nearestCode ? nearest : 'Finding nearest station...'}

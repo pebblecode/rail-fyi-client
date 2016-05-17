@@ -1,20 +1,20 @@
 'use strict';
 
-import React              from 'react';
+import React, { PropTypes, Component } from 'react';
 
-import Header             from './components/Header';
-import Footer             from './components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 const propTypes = {
-  params: React.PropTypes.object,
-  query: React.PropTypes.object,
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.array,
-    React.PropTypes.object
+  params: PropTypes.object,
+  query: PropTypes.object,
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object
   ])
 };
 
-class App extends React.Component {
+class App extends Component {
 
   constructor(props) {
     super(props);
@@ -22,12 +22,6 @@ class App extends React.Component {
 
   componentWillMount() {
     console.log('About to mount App');
-  }
-
-  componentDidMount() {
-  }
-
-  componentWillUnmount() {
   }
 
   renderChildren() {
@@ -39,14 +33,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-
+      <div className="main-wrapper">
         <Header />
-
-        {this.renderChildren()}
-
+          { this.renderChildren() }
         <Footer />
-
       </div>
     );
   }

@@ -1,8 +1,8 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 
-class Header extends React.Component {
+class Header extends Component {
 
   constructor(props) {
     super(props);
@@ -11,9 +11,7 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-
-        Header
-
+        <div className="logo">RAIL FYI</div>
       </header>
     );
   }

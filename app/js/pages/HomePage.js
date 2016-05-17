@@ -1,13 +1,14 @@
 'use strict';
 
-import React         from 'react';
-import {Link}        from 'react-router';
+import React, { PropTypes, Component } from 'react';
+
+import NearestStation from '../components/NearestStation';
 
 const propTypes = {
-  currentUser: React.PropTypes.object
+  currentUser: PropTypes.object
 };
 
-class HomePage extends React.Component {
+class HomePage extends Component {
 
   constructor(props) {
     super(props);
@@ -16,15 +17,8 @@ class HomePage extends React.Component {
   render() {
     return (
       <section className="home-page">
-
-        <div>
-          Home
-        </div>
-
-        <div>
-          <Link to="/search">Search</Link>
-        </div>
-
+        Welcome to RAIL FYI!
+        <NearestStation />
       </section>
     );
   }

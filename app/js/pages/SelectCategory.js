@@ -1,9 +1,9 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-class SelectCategory extends React.Component {
+class SelectCategory extends Component {
   render() {
     return (
       <section className="select-category">

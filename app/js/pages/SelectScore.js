@@ -1,9 +1,9 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-class SelectScore extends React.Component {
+class SelectScore extends Component {
   render() {
     return (
       <section className="select-score">

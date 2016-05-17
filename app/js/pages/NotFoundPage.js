@@ -1,12 +1,12 @@
 'use strict';
 
-import React         from 'react';
+import React, { PropTypes, Component } from 'react';
 
 const propTypes = {
-  currentUser: React.PropTypes.object
+  currentUser: PropTypes.object
 };
 
-class NotFoundPage extends React.Component {
+class NotFoundPage extends Component {
 
   constructor(props) {
     super(props);
@@ -15,9 +15,7 @@ class NotFoundPage extends React.Component {
   render() {
     return (
       <section className="not-found-page">
-
         Page Not Found
-
       </section>
     );
   }

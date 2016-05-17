@@ -1,8 +1,17 @@
 @import 'vars';
 
-@import "./normalize.css";
-@import "./skeleton.css";
+@import "./vendor/normalize.css";
+@import "./vendor/skeleton.css";
 
-button.button-primary.active {
-  background-color: red;
+@import "./layout/_header.scss";
+@import "./layout/_footer.scss";
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-page {
+  flex: 1;
 }

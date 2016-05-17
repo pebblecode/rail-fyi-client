@@ -1,8 +1,8 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
 
-class Footer extends React.Component{
+class Footer extends Component{
 
   constructor(props) {
     super(props);
@@ -11,9 +11,8 @@ class Footer extends React.Component{
   render() {
     return (
       <footer>
-
-        Footer
-
+        <button type="submit" className="button-secondary one-third column">Previous</button>
+        <button type="submit" className="button-primary one-third column">Next</button>
       </footer>
     );
   }

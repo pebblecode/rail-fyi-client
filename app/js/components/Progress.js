@@ -1,19 +1,19 @@
 'use strict';
 
-import React from 'react';
+import React { PropTypes, Component } from 'react';
 
-class Progress extends React.Component {
+class Progress extends Component {
   render() {
     return (
       <div className="progress-bar">
-        {this.props.state}
+        { this.props.state }
       </div>
     );
   }
 }
 
 Progress.propTypes = {
-  stage: React.PropTypes.int
+  stage: PropTypes.int
 };
 
 export default Progress;

@@ -1,9 +1,9 @@
 'use strict';
 
-import React     from 'react';
-import ReactDOM  from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import Routes    from './Routes';
+import Routes from './Routes';
 
 if ( process.env.NODE_ENV !== 'production' ) {
   // Enable React devtools

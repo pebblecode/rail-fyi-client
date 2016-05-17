@@ -5,7 +5,6 @@ import {Router, Route, IndexRoute} from 'react-router';
 import CreateBrowserHistory from 'history/lib/createBrowserHistory';
 import App from './App';
 import HomePage from './pages/HomePage';
-import SearchPage from './pages/SearchPage';
 import NotFoundPage from './pages/NotFoundPage';
 import StaffForm from './components/StaffForm';
 import NearestStation from './components/NearestStation';
@@ -17,7 +16,6 @@ export default (
       <IndexRoute component={HomePage} />
 
       <Route path="/" component={HomePage} />
-      <Route path="/search" component={SearchPage} />
       <Route path="/staff-form" component={StaffForm} />
       <Route path="/nearest-station" component={NearestStation} />
 
