@@ -22,7 +22,7 @@ const config = {
     dest: './build/css/'
   },
 
-  sourceDir: './app/',
+  sourceDir: './',
 
   buildDir: './build/',
 
