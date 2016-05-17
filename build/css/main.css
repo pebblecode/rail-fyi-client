@@ -1,0 +1,7 @@
+@import url(./normalize.css);
+@import url(./skeleton.css);
+/* line 6, /Users/emmanash/hacks/rail-fyi-client/app/styles/main.scss */
+button.button-primary.active {
+  background-color: red; }
+
+/*# sourceMappingURL=../../sass */
