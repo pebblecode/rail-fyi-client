@@ -21,20 +21,15 @@ class SubjectForm extends Component {
     )
   }
   _renderOptions() {
-    const options = fields.map((field) => {
+    return fields.map((field) => {
       return this._renderOption(field);
     });
-
-    return options;
   }
 
   render() {
-    const options = this._renderOptions();
-    console.log(options);
-    console.log(this.props);
     return (
       <div>
-        {options}
+        {this._renderOptions()}
       </div>
     );
   }

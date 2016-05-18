@@ -25,7 +25,6 @@ class App extends Component {
   }
 
   renderChildren() {
-    console.log(this.props);
     return React.cloneElement(this.props.children, ...this.props);
   }
 
