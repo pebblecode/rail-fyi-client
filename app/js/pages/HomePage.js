@@ -2,8 +2,7 @@
 
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
-
-import NearestStation from '../components/NearestStation';
+import { Link } from 'react-router';
 
 const propTypes = {
   currentUser: PropTypes.object
@@ -19,7 +18,7 @@ class HomePage extends Component {
     return (
       <section className="home-page">
         Welcome to RAIL FYI!
-        <NearestStation {...this.props} onStationClick={'/station/stationCode'} />
+        <Link to="/select-station">Start</Link>
       </section>
     );
   }

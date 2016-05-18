@@ -64,7 +64,6 @@ class NearestStation extends Component {
   }
 
   render() {
-    console.log(this.props);
     const stationName = this.state.nearestName;
     const station =
       <Link to={this.props.onStationClick}>
