@@ -25,10 +25,7 @@ class App extends Component {
   }
 
   renderChildren() {
-    return React.cloneElement(this.props.children, {
-      params: this.props.params,
-      query: this.props.query
-    });
+    return React.cloneElement(this.props.children, ...this.props);
   }
 
   render() {
