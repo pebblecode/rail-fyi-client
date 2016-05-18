@@ -55,5 +55,6 @@ function mapStateToProps(state) {
 
 export default reduxForm({
   form: 'wizard',
-  fields
+  fields,
+  destroyOnUnmount: false
 })(connect(mapStateToProps)(SubjectForm));
