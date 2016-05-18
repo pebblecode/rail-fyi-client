@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import config from '../config';
 import ProgressBar from '../components/ProgressBar';
+import InProgressMessage from '../components/InProgressMessage';
 
 class SelectDescription extends Component {
   render() {
@@ -13,6 +14,7 @@ class SelectDescription extends Component {
     return (
       <section className="select-description">
         <ProgressBar stage={3} />
+        <InProgressMessage />
         Now go on, tell them what you thought.
         <ul>
           {descriptions.map(d => <li key={d}>{d}</li>)}
