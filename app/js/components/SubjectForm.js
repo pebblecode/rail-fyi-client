@@ -31,6 +31,7 @@ class SubjectForm extends Component {
   render() {
     const options = this._renderOptions();
     console.log(options);
+    console.log(this.props);
     return (
       <div>
         {options}
@@ -48,13 +49,11 @@ SubjectForm.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    form: state.form.wizard // <---------
+    form: state.form.wizard
   };
 }
 
-const SubjectReduxForm = reduxForm({
+export default reduxForm({
   form: 'wizard',
   fields
-})(SubjectForm);
-
-export default connect(mapStateToProps)(SubjectReduxForm);
+})(connect(mapStateToProps)(SubjectForm));

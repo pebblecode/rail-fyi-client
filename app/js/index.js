@@ -1,8 +1,10 @@
 'use strict';
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import CreateBrowserHistory from 'history/lib/createBrowserHistory';
 
+import ConfigureStore from './store';
 import Routes from './Routes';
 
 if ( process.env.NODE_ENV !== 'production' ) {
@@ -10,4 +12,7 @@ if ( process.env.NODE_ENV !== 'production' ) {
   window.React = React;
 }
 
-ReactDOM.render(Routes, document.getElementById('app'));
+const store = ConfigureStore({});
+const history = CreateBrowserHistory();
+
+render(<Routes store={store} history={history} />, document.getElementById('app'));
