@@ -1,7 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
-import Progress from '../components/Progress';
+import Progress from '../components/ProgressBar';
 
 class Option extends Component {
   render() {
