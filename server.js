@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.use('*', function(req, res){
-  res.sendFile('../build/index.html', {root: __dirname})
+  res.sendFile('./build/index.html', {root: __dirname})
   // res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 
