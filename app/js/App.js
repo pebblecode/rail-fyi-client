@@ -3,7 +3,6 @@
 import React, { PropTypes, Component } from 'react';
 
 import Header from './components/Header';
-import Footer from './components/Footer';
 
 const propTypes = {
   params: PropTypes.object,
@@ -32,8 +31,7 @@ class App extends Component {
     return (
       <div className="main-wrapper">
         <Header />
-          { this.renderChildren() }
-        <Footer />
+        { this.renderChildren() }
       </div>
     );
   }
