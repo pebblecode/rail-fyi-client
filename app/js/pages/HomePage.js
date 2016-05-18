@@ -1,6 +1,7 @@
 'use strict';
 
 import React, { PropTypes, Component } from 'react';
+import { connect } from 'react-redux';
 
 import NearestStation from '../components/NearestStation';
 
@@ -27,4 +28,6 @@ class HomePage extends Component {
 
 HomePage.propTypes = propTypes;
 
-export default HomePage;
+// export default HomePage;
+
+export default connect()(HomePage)
