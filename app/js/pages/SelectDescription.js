@@ -4,7 +4,7 @@ import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import config from '../config';
-import Progress from '../components/Progress';
+import ProgressBar from '../components/ProgressBar';
 
 class SelectDescription extends Component {
   render() {
@@ -12,7 +12,7 @@ class SelectDescription extends Component {
     const descriptions = config.subjectDescriptions[this.props.category];
     return (
       <section className="select-description">
-        <Progress stage={3} />
+        <ProgressBar stage={3} />
         Now go on, tell them what you thought.
         <ul>
           {descriptions.map(d => <li key={d}>{d}</li>)}

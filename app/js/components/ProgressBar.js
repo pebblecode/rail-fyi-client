@@ -2,7 +2,7 @@
 
 import React, { PropTypes, Component } from 'react';
 
-class Progress extends Component {
+class ProgressBar extends Component {
   render() {
     return (
       <div className="progress-bar">
@@ -12,8 +12,8 @@ class Progress extends Component {
   }
 }
 
-Progress.propTypes = {
+ProgressBar.propTypes = {
   stage: PropTypes.number
 };
 
-export default Progress;
+export default ProgressBar;
