@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 import Progress from '../components/Progress';
-import SubjectForm from '../components/SubjectForm';
+import SubjectForm from '../containers/SubjectForm';
 
 class SelectSubject extends Component {
   render() {

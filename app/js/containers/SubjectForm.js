@@ -5,24 +5,25 @@ import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import { Link } from 'react-router';
 
-import Option from './Option';
+import Option from '../components/Option';
 
-export const fields = [ 'Toilet', 'Cleanliness', 'Temperature', 'Staff', 'Crowd' ];
+export const options = [ 'Toilet', 'Cleanliness', 'Temperature', 'Staff', 'Crowd' ];
 
 class SubjectForm extends Component {
 
-  _onOptionClicked() {
-    console.log('I got clicked!');
+  _onOptionClicked(option) {
+    const {subject} = this.props.fields;
+    subject.onChange(option);
   }
 
-  _renderOption(field) {
+  _renderOption(option) {
     return (
-      <Option key={field} optionText={field} onClick={this._onOptionClicked} />
+      <Option key={option} optionText={option} onClick={this._onOptionClicked.bind(this, option)} />
     )
   }
   _renderOptions() {
-    return fields.map((field) => {
-      return this._renderOption(field);
+    return options.map((option) => {
+      return this._renderOption(option);
     });
   }
 
@@ -50,6 +51,6 @@ function mapStateToProps(state) {
 
 export default reduxForm({
   form: 'wizard',
-  fields,
+  fields: ['subject'],
   destroyOnUnmount: false
 })(connect(mapStateToProps)(SubjectForm));
