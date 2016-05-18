@@ -11,6 +11,7 @@ import NearestStation from './components/NearestStation';
 import SelectSubject from './pages/SelectSubject';
 import SelectStation from './pages/SelectStation';
 import SelectDescription from './pages/SelectDescription';
+import SendComplaint from './pages/SendComplaint';
 
 const Root = props => {
   return (
@@ -26,6 +27,7 @@ const Root = props => {
           <Route path="/select-subject" component={SelectSubject} />
           <Route path="/select-station" component={SelectStation} />
           <Route path="/select-description" component={SelectDescription} />
+          <Route path="/send-complaint" component={SendComplaint} />
 
           <Route path="*" component={NotFoundPage} />
 
