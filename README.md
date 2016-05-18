@@ -1,15 +1,17 @@
 ###RAIL-FYI Client app
 
 ##INSTALL
-  npm i
+  `npm i`
 
 ##DEV
-  gulp dev
+  `gulp dev`
 
 ##PROD
-  gulp prod
-  git push
-  git push heroku
+  `gulp prod`
+
+  `git push`
+
+  `git push heroku`
 
 ##STAGING
   https://rail-fyi.herokuapp.com
