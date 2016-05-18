@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Autocomplete from 'react-autocomplete';
-import Progress from '../components/Progress';
+import ProgressBar from '../components/ProgressBar';
 import InProgressMessage from '../components/InProgressMessage';
 import NearestStation from '../components/NearestStation';
 import stationList from '../data/station-list';
@@ -17,7 +17,7 @@ class SelectStation extends Component {
   render() {
     return (
       <section className="select-station">
-        <Progress stage={1} />
+        <ProgressBar stage={1} />
         <InProgressMessage />
         <h1>Station</h1>
         <p>Which station would you like to give us feedback on?</p>
