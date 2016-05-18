@@ -10,6 +10,7 @@ import StaffForm from './components/StaffForm';
 import NearestStation from './components/NearestStation';
 import SelectSubject from './pages/SelectSubject';
 import SelectStation from './pages/SelectStation';
+import SelectDescription from './pages/SelectDescription';
 
 const Root = props => {
   return (
@@ -24,6 +25,7 @@ const Root = props => {
           <Route path="/nearest-station" component={NearestStation} />
           <Route path="/select-subject" component={SelectSubject} />
           <Route path="/select-station" component={SelectStation} />
+          <Route path="/select-description" component={SelectDescription} />
 
           <Route path="*" component={NotFoundPage} />
 
