@@ -3,7 +3,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
-import { Link } from 'react-router';
 
 import Option from '../components/Option';
 
@@ -12,7 +11,7 @@ export const options = [ 'Toilet', 'Cleanliness', 'Temperature', 'Staff', 'Crowd
 class SubjectForm extends Component {
 
   _onOptionClicked(option) {
-    const {subject} = this.props.fields;
+    const { subject } = this.props.fields;
     subject.onChange(option);
   }
 
