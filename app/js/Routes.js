@@ -14,7 +14,7 @@ import SelectSubject from './pages/SelectSubject';
 import SelectStation from './pages/SelectStation';
 
 export default (
-  <Provider store={ConfigureStore()}>
+  <Provider store={ConfigureStore({})}>
     <Router history={CreateBrowserHistory()}>
       <Route path="/" component={App}>
 
