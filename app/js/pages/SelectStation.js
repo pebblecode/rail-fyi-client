@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Autocomplete from 'react-autocomplete';
 import Progress from '../components/Progress';
+import InProgressMessage from '../components/InProgressMessage';
 import NearestStation from '../components/NearestStation';
 import stationList from '../data/station-list';
 
@@ -17,6 +18,7 @@ class SelectStation extends Component {
     return (
       <section className="select-station">
         <Progress stage={1} />
+        <InProgressMessage />
         <h1>Station</h1>
         <p>Which station would you like to give us feedback on?</p>
         <NearestStation onStationClick='/select-subject' />
