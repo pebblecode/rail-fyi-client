@@ -19,7 +19,7 @@ class HomePage extends Component {
     return (
       <section className="home-page">
         Welcome to RAIL FYI!
-        <NearestStation />
+        <NearestStation {...this.props} onStationClick={'/station/stationCode'} />
       </section>
     );
   }
@@ -27,7 +27,5 @@ class HomePage extends Component {
 }
 
 HomePage.propTypes = propTypes;
-
-// export default HomePage;
 
 export default connect()(HomePage)
