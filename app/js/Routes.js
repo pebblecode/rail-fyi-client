@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 import StaffForm from './components/StaffForm';
 import NearestStation from './components/NearestStation';
+import SelectSubject from './pages/SelectSubject';
 
 export default (
   <Router history={CreateBrowserHistory()}>
@@ -18,6 +19,7 @@ export default (
       <Route path="/" component={HomePage} />
       <Route path="/staff-form" component={StaffForm} />
       <Route path="/nearest-station" component={NearestStation} />
+      <Route path="/select-subject" component={SelectSubject} />
 
       <Route path="*" component={NotFoundPage} />
 
