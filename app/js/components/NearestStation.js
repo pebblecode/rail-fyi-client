@@ -1,7 +1,7 @@
 'use strict';
 
-import React, { Component } from 'react';
-
+import React, { PropTypes, Component } from 'react';
+import { Link } from 'react-router';
 import stationList from '../data/station-list';
 
 class NearestStation extends Component {
@@ -64,12 +64,24 @@ class NearestStation extends Component {
   }
 
   render() {
-    const nearest = <p>Nearest station: <a href={this.state.nearestCode}>{this.state.nearestName}</a> {this.state.distance} km</p>;
+    const stationName = this.state.nearestName;
+    const station =
+      <Link to={this.props.onStationClick}>
+        {stationName}
+      </Link>;
+    const nearest =
+      <p>
+        Nearest station: {station} {this.state.distance}km
+      </p>;
     return (
       <div>
         {this.state.nearestCode ? nearest : 'Finding nearest station...'}
       </div>);
   }
 }
+
+NearestStation.propTypes = {
+  onStationClick: PropTypes.string
+};
 
 export default NearestStation;
