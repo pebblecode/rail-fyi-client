@@ -9,7 +9,6 @@ import InProgressMessage from '../components/InProgressMessage';
 
 class SelectDescription extends Component {
   render() {
-    console.log(config.subjectDescriptions);
     const descriptions = config.subjectDescriptions[this.props.category];
     return (
       <section className="select-description">
