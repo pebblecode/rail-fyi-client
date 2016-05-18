@@ -6,12 +6,13 @@
 ##DEV
   `gulp dev`
 
+##SETUP HEROKU
+  `heroku login`
+  `heroku git:remote -a rail-fyi`
+
 ##PROD
-  `gulp prod`
-
   `git push`
-
-  `git push heroku`
+  `git push heroku master`
 
 ##STAGING
   https://rail-fyi.herokuapp.com
