@@ -3,19 +3,27 @@
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
+
 import ProgressBar from '../components/ProgressBar';
 import InProgressMessage from '../components/InProgressMessage';
 import stationList from '../data/station-list';
 import config from '../config';
 
 class SendComplaint extends Component {
+  _createMessage() {
+    const { station, subject, description } = this.props;
+
+    return 'In ' + station + ' the ' + subject + ' was ' + description;
+  }
+
   render() {
     const { station, message } = this.props;
+    console.log(station);
     const stationOperatorCode =
       stationList.filter(s => s.name === station)[0].stationOperator;
     const stationOperator =
       config.stationOperators.filter(o => o.code === stationOperatorCode)[0];
-    const tweet = stationOperator.twitter + ' ' + message;
+    const tweet = stationOperator.twitter + ' ' + this._createMessage();
     return (
       <section className="select-complaint">
         <ProgressBar stage={4} />
@@ -38,10 +46,11 @@ SendComplaint.propTypes = {
 };
 
 const mapStateToProps = state => {
-  // TODO: Get this from the state
   return {
     message: "At Vauxhall the toilet is dirty",
-    station: "Vauxhall"
+    station: state.form.wizard.station.value,
+    subject: state.form.wizard.subject.value,
+    description: state.form.wizard.description.value
   };
 };
 
