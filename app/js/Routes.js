@@ -15,9 +15,27 @@ import SendComplaint from './pages/SendComplaint';
 const Root = props => {
 
   const redirectToHomeIfNoStation = (nextState, replace) => {
-    // console.log(this);
-    //
-    // replace(null, '/');
+    const reduxState = props.store.getState();
+
+    if (!reduxState.form || !reduxState.form.wizard || !reduxState.form.wizard.station) {
+      replace(null, '/');
+    }
+  }
+
+  const redirectToHomeIfNoSubject = (nextState, replace) => {
+    const reduxState = props.store.getState();
+
+    if (!reduxState.form || !reduxState.form.wizard || !reduxState.form.wizard.subject) {
+      replace(null, '/');
+    }
+  }
+
+  const redirectToHomeIfNoDescription = (nextState, replace) => {
+    const reduxState = props.store.getState();
+
+    if (!reduxState.form || !reduxState.form.wizard || !reduxState.form.wizard.description) {
+      replace(null, '/');
+    }
   }
 
   return (
@@ -28,10 +46,10 @@ const Root = props => {
           <IndexRoute component={HomePage} />
 
           <Route path="/" component={HomePage} />
-          <Route path="/select-station" onEnter={redirectToHomeIfNoStation.bind(this)} component={SelectStation} />
-          <Route path="/select-subject" component={SelectSubject} />
-          <Route path="/select-description" component={SelectDescription} />
-          <Route path="/send-complaint" component={SendComplaint} />
+          <Route path="/select-station" component={SelectStation} />
+          <Route path="/select-subject" onEnter={redirectToHomeIfNoStation} component={SelectSubject} />
+          <Route path="/select-description" onEnter={redirectToHomeIfNoSubject} component={SelectDescription} />
+          <Route path="/send-complaint" onEnter={redirectToHomeIfNoDescription} component={SendComplaint} />
 
           <Route path="*" component={NotFoundPage} />
 
