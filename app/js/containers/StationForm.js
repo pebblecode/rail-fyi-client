@@ -9,16 +9,17 @@ import StationDropdown from '../components/StationDropdown';
 
 class StationForm extends Component {
 
-  _onOptionClicked(option) {
+  _onSelectItem(item) {
     const { station } = this.props.fields;
-    station.onChange(option);
+    station.onChange(item);
+    this.props.history.push('/select-subject');
   }
 
   render() {
     return (
       <div>
-        <NearestStation onStationClick={'/select-subject'} />
-        <StationDropdown />
+        <NearestStation onStationClick={this._onSelectItem.bind(this)} />
+        <StationDropdown onSelectItem={this._onSelectItem.bind(this)} />
       </div>
     );
   }

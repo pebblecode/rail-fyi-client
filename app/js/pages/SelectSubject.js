@@ -15,7 +15,7 @@ class SelectSubject extends Component {
         <InProgressMessage />
         <h1>Subject</h1>
         <p>Please select the relevant subject you would like to give feedback on</p>
-        <SubjectForm />
+        <SubjectForm {...this.props}/>
       </section>
     );
   }

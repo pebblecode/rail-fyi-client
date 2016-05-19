@@ -66,9 +66,9 @@ class NearestStation extends Component {
   render() {
     const stationName = this.state.nearestName;
     const station =
-      <Link to={this.props.onStationClick}>
+      <span onClick={this.props.onStationClick.bind(null, stationName)}>
         {stationName}
-      </Link>;
+      </span>;
     const nearest =
       <p>
         Nearest station: {station} {this.state.distance}km
@@ -81,7 +81,7 @@ class NearestStation extends Component {
 }
 
 NearestStation.propTypes = {
-  onStationClick: PropTypes.string
+  onStationClick: PropTypes.func
 };
 
 export default NearestStation;
