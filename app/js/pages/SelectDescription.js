@@ -3,7 +3,9 @@
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
+
 import config from '../config';
+import DescriptionForm from '../containers/DescriptionForm';
 import ProgressBar from '../components/ProgressBar';
 import InProgressMessage from '../components/InProgressMessage';
 
@@ -15,9 +17,7 @@ class SelectDescription extends Component {
         <ProgressBar stage={3} />
         <InProgressMessage />
         Now go on, tell them what you thought.
-        <ul>
-          {descriptions.map(d => <li key={d}>{d}</li>)}
-        </ul>
+        <DescriptionForm {...this.props} options={descriptions}/>
       </section>
     );
   }
@@ -29,7 +29,7 @@ SelectDescription.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    category: 'Toilet'
+    category: state.form.wizard.subject.value
   };
 };
 

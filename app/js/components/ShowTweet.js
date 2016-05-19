@@ -3,12 +3,6 @@
 import React, { Component } from 'react';
 
 class ShowTweet extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = Object.assign({}, {tweet: null}, this.props);
-  }
-
   render() {
     return (
       <div className="container">
