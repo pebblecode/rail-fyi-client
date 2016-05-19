@@ -21,8 +21,13 @@ class ProgressBar extends Component {
         );
       });
     return (
-      <div className="progress-bar">
-        { dots }
+      <div className="progress-bar-container">
+        <ul className={"progress-bar-list progress-" + this.props.stage}>
+          <li className="progress-bar-dot"></li>
+          <li className="progress-bar-dot"></li>
+          <li className="progress-bar-dot"></li>
+          <li className="progress-bar-dot"></li>
+        </ul>
       </div>
     );
   }
