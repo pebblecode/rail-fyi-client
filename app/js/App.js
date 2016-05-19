@@ -29,7 +29,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="main-wrapper">
+      <div className="app-container">
         <Header />
         { this.renderChildren() }
       </div>
