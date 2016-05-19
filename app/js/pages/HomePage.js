@@ -17,8 +17,10 @@ class HomePage extends Component {
   render() {
     return (
       <section className="home-page">
-        Welcome to RAIL FYI!
-        <Link to="/select-station">Start</Link>
+        <span className="icon-large icon-train"></span>
+        <p>Hello and Welcome</p>
+        <p>To Rail FYI. Your one stop shop for Train based whinging. Slick, easy, to use and oh so fast Rail FYI will let you vent right from your mobile device!</p>
+        <Link className="btn" to="/select-station">Start</Link>
       </section>
     );
   }
