@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import App from './App';
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
-import StaffForm from './components/StaffForm';
 import SelectSubject from './pages/SelectSubject';
 import SelectStation from './pages/SelectStation';
 import SelectDescription from './pages/SelectDescription';
