@@ -10,8 +10,26 @@ import ProgressBar from '../components/ProgressBar';
 import InProgressMessage from '../components/InProgressMessage';
 
 class SelectDescription extends Component {
+  _findDescriptions() {
+    const { category } = this.props;
+    const options = config.subjects;
+
+    let descriptions;
+
+    options.forEach((option) => {
+      if (option.name === category) {
+        descriptions = option.options;
+      }
+    });
+
+    return descriptions;
+  }
+
   render() {
-    const descriptions = config.subjectDescriptions[this.props.category];
+    const descriptions = this._findDescriptions();
+
+    console.log(descriptions);
+
     return (
       <section className="select-description">
         <ProgressBar stage={3} />

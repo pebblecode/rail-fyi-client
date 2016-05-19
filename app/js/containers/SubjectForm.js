@@ -4,7 +4,6 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 
-import config from '../config';
 import Option from '../components/Option';
 
 class SubjectForm extends Component {
@@ -17,16 +16,22 @@ class SubjectForm extends Component {
 
   _renderOption(option) {
     return (
-      <Option key={option} optionText={option} onClick={this._onOptionClicked.bind(this, option)} />
+      <Option key={option.name} option={option} onClick={this._onOptionClicked.bind(this, option.name)} />
     )
   }
   _renderOptions() {
 
     const options = this.props.options;
 
-    return options.map((option) => {
+    const optionElements = options.map((option) => {
       return this._renderOption(option);
     });
+
+    return (
+      <ul className="btn-group-list">
+        {optionElements}
+      </ul>
+    );
   }
 
   render() {

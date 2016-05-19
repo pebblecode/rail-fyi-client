@@ -16,15 +16,21 @@ class DescriptionForm extends Component {
 
   _renderOption(option) {
     return (
-      <Option key={option} optionText={option} onClick={this._onOptionClicked.bind(this, option)} />
+      <Option key={option.name} option={option} onClick={this._onOptionClicked.bind(this, option.name)} />
     )
   }
   _renderOptions() {
     const options = this.props.options;
 
-    return options.map((option) => {
+    const optionElements = options.map((option) => {
       return this._renderOption(option);
     });
+
+    return (
+      <ul className="btn-group-list">
+        {optionElements}
+      </ul>
+    );
   }
 
   render() {

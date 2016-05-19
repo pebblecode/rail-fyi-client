@@ -1,32 +1,82 @@
-const subjectDescriptions = {
-  Toilet: [
-    'Dirty',
-    'No toilet paper',
-    'Blocked',
-    'Broken',
-    'Perfect'
-  ],
-  Cleanliness: [
-    'Litter',
-    'Dirty',
-    'Super clean'
-  ],
-  Staff: [
-    'Unfriendly',
-    'Friendly',
-    'Aggressive',
-    'Uninformative'
-  ],
-  Crowd: [
-    'Too crowded',
-    'Just right',
-    'No one\'s here'
-  ],
-  Temperature: [
-    'Too hot',
-    'Too cold'
-  ]
-};
+const subjects = [
+  {
+    name: 'Toilet',
+    icon: 'icon-toilet',
+    options: [{
+      name: 'Dirty',
+      icon: 'icon-dirty'
+    }, {
+      name: 'No toilet paper',
+      icon: 'icon-no-tp'
+    }, {
+      name: 'Blocked',
+      icon: 'icon-broken'
+    }, {
+      name: 'Broken',
+      icon: 'icon-broken'
+    }, {
+      name: 'Perfect',
+      icon: 'icon-clean'
+    }]
+  },
+  {
+    name: 'Cleanliness',
+    icon: 'icon-clean',
+    options: [{
+      name: 'Litter',
+      icon: 'icon-litter'
+    }, {
+      name: 'Dirty',
+      icon: 'icon-dirty'
+    }, {
+      name: 'Super clean',
+      icon: 'icon-clean'
+    }]
+  },
+  {
+    name: 'Staff',
+    icon: 'icon-staff',
+    options: [{
+      name: 'Unfriendly',
+      icon: 'icon-unfriendly'
+    },{
+      name: 'Friendly',
+      icon: 'icon-friendly'
+    }, {
+      name: 'Aggressive',
+      icon: 'icon-agressive'
+    }, {
+      name: 'Uninformative',
+      icon: 'icon-uninformative'
+    }],
+    icon: 'icon-staff'
+  },
+  {
+    name: 'Crowd',
+    icon: 'icon-crowded',
+    options: [{
+      name: 'Too crowded',
+      icon: 'icon-crowded'
+    }, {
+      name: 'Just right',
+      icon: 'icon-crowd-ok'
+    }, {
+      name: 'No one\'s here',
+      icon: 'icon-crowd-empty'
+    }]
+  },
+  {
+    name: 'Temperature',
+    icon: 'icon-temp',
+    options: [{
+      name: 'Too hot',
+      icon: 'icon-temp-hot'
+    }, {
+      name: 'Too cold',
+      icon: 'icon-temp-cold'
+    }],
+  }
+];
 
 const stationOperators = [
   { name: 'Abellio Greater Anglia',
@@ -196,4 +246,4 @@ const stationOperators = [
   }
 ];
 
-export default { subjectDescriptions, stationOperators }
+export default { subjects, stationOperators }

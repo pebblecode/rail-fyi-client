@@ -10,7 +10,12 @@ import SubjectForm from '../containers/SubjectForm';
 
 class SelectSubject extends Component {
   render() {
-    const options = Object.keys(config.subjectDescriptions);
+    const options = config.subjects.map((subject) => {
+      return {
+        name: subject.name,
+        icon: subject.icon
+      }
+    });
 
     return (
       <section className="select-category">
