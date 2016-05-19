@@ -44,12 +44,28 @@ InProgressMessage.propTypes = {
 };
 
 const mapStateToProps = state => {
-  console.log('state', state);
-  // TODO: Get the props from the state form
+  let station;
+  let subject;
+  let description;
+
+  if (state.form && state.form.wizard) {
+    if (state.form.wizard.station) {
+      station = state.form.wizard.station.value;
+    }
+
+    if (state.form.wizard.subject) {
+      subject = state.form.wizard.subject.value;
+    }
+
+    if (state.form.wizard.description) {
+      description = state.form.wizard.description.value;
+    }
+  }
+
   return {
-    station: null,
-    subject: null,
-    description: null
+    station,
+    subject,
+    description
   };
 };
 
