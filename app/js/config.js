@@ -189,6 +189,11 @@ const stationOperators = [
     twitter: '@VirginTrains',
     email: ''
   },
+  {
+    name: 'Network Rail',
+    code: 'NR',
+    twitter: '@networkrail'
+  }
 ];
 
 export default { subjectDescriptions, stationOperators }
