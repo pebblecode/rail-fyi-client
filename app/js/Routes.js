@@ -13,30 +13,25 @@ import SelectDescription from './pages/SelectDescription';
 import SendComplaint from './pages/SendComplaint';
 
 const Root = props => {
+  const redirectToHomeIfNoWizardItem = (wizardItem, replace) => {
+    const reduxState = props.store.getState();
+
+    if (!reduxState.form || !reduxState.form.wizard || !reduxState.form.wizard[wizardItem]) {
+      replace(null, '/');
+    }
+  };
 
   const redirectToHomeIfNoStation = (nextState, replace) => {
-    const reduxState = props.store.getState();
-
-    if (!reduxState.form || !reduxState.form.wizard || !reduxState.form.wizard.station) {
-      replace(null, '/');
-    }
-  }
+    redirectToHomeIfNoWizardItem('station', replace);
+  };
 
   const redirectToHomeIfNoSubject = (nextState, replace) => {
-    const reduxState = props.store.getState();
-
-    if (!reduxState.form || !reduxState.form.wizard || !reduxState.form.wizard.subject) {
-      replace(null, '/');
-    }
-  }
+    redirectToHomeIfNoWizardItem('subject', replace);
+  };
 
   const redirectToHomeIfNoDescription = (nextState, replace) => {
-    const reduxState = props.store.getState();
-
-    if (!reduxState.form || !reduxState.form.wizard || !reduxState.form.wizard.description) {
-      replace(null, '/');
-    }
-  }
+    redirectToHomeIfNoWizardItem('description', replace);
+  };
 
   return (
     <Provider store={props.store}>
