@@ -18,7 +18,7 @@ class SelectStation extends Component {
         <InProgressMessage />
         <h1>Station</h1>
         <p>Which station would you like to give us feedback on?</p>
-        <StationForm />
+        <StationForm {...this.props}/>
       </section>
     );
   }
