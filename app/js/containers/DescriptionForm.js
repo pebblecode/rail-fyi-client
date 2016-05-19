@@ -4,15 +4,14 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 
-import config from '../config';
 import Option from '../components/Option';
 
-class SubjectForm extends Component {
+class DescriptionForm extends Component {
 
   _onOptionClicked(option) {
-    const { subject } = this.props.fields;
-    subject.onChange(option);
-    this.props.history.push('/select-description');
+    const { description } = this.props.fields;
+    description.onChange(option);
+    this.props.history.push('/send-complaint');
   }
 
   _renderOption(option) {
@@ -21,7 +20,6 @@ class SubjectForm extends Component {
     )
   }
   _renderOptions() {
-
     const options = this.props.options;
 
     return options.map((option) => {
@@ -38,7 +36,7 @@ class SubjectForm extends Component {
   }
 }
 
-SubjectForm.propTypes = {
+DescriptionForm.propTypes = {
   fields: PropTypes.object.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   resetForm: PropTypes.func.isRequired,
@@ -47,12 +45,13 @@ SubjectForm.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    form: state.form.wizard
+    form: state.form.wizard,
+    category: state.form.wizard.subject.value
   };
 }
 
 export default reduxForm({
   form: 'wizard',
-  fields: ['subject'],
+  fields: ['description'],
   destroyOnUnmount: false
-})(connect(mapStateToProps)(SubjectForm));
+})(connect(mapStateToProps)(DescriptionForm));
