@@ -16,7 +16,7 @@ class SelectStation extends Component {
       <section className="select-station">
         <ProgressBar stage={1} />
         <InProgressMessage />
-        <h1>Station</h1>
+        <span className="icon-large icon-location"></span>
         <p>Which station would you like to give us feedback on?</p>
         <StationForm {...this.props} />
       </section>
