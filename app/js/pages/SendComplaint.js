@@ -8,22 +8,19 @@ import ProgressBar from '../components/ProgressBar';
 import InProgressMessage from '../components/InProgressMessage';
 import stationList from '../data/station-list';
 import config from '../config';
+import message from '../lib/message';
 
 class SendComplaint extends Component {
-  _createMessage() {
-    const { station, subject, description } = this.props;
-
-    return 'In ' + station + ' the ' + subject + ' was ' + description;
-  }
-
   render() {
-    const { station, message } = this.props;
-    console.log(station);
+    const { station, subject, description } = this.props;
     const stationOperatorCode =
       stationList.filter(s => s.name === station)[0].stationOperator;
     const stationOperator =
       config.stationOperators.filter(o => o.code === stationOperatorCode)[0];
-    const tweet = stationOperator.twitter + ' ' + this._createMessage();
+    const tweet =
+      stationOperator.twitter
+        + ' '
+        + message.buildFinalMessageString(station, subject, description);
     return (
       <section className="select-complaint">
         <ProgressBar stage={4} />
@@ -47,7 +44,6 @@ SendComplaint.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    message: "At Vauxhall the toilet is dirty",
     station: state.form.wizard.station.value,
     subject: state.form.wizard.subject.value,
     description: state.form.wizard.description.value
