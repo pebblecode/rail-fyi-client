@@ -3,6 +3,7 @@
 import React from 'react';
 import { Router, Route, IndexRoute } from 'react-router';
 import { Provider } from 'react-redux';
+
 import App from './App';
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
@@ -12,6 +13,13 @@ import SelectDescription from './pages/SelectDescription';
 import SendComplaint from './pages/SendComplaint';
 
 const Root = props => {
+
+  const redirectToHomeIfNoStation = (nextState, replace) => {
+    // console.log(this);
+    //
+    // replace(null, '/');
+  }
+
   return (
     <Provider store={props.store}>
       <Router history={props.history}>
@@ -20,7 +28,7 @@ const Root = props => {
           <IndexRoute component={HomePage} />
 
           <Route path="/" component={HomePage} />
-          <Route path="/select-station" component={SelectStation} />
+          <Route path="/select-station" onEnter={redirectToHomeIfNoStation.bind(this)} component={SelectStation} />
           <Route path="/select-subject" component={SelectSubject} />
           <Route path="/select-description" component={SelectDescription} />
           <Route path="/send-complaint" component={SendComplaint} />
@@ -30,7 +38,7 @@ const Root = props => {
         </Route>
       </Router>
     </Provider>
-  )
-}
+  );
+};
 
 export default Root;

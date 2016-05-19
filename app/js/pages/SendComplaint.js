@@ -13,6 +13,7 @@ import message from '../lib/message';
 class SendComplaint extends Component {
   render() {
     const { station, subject, description } = this.props;
+
     const stationOperatorCode =
       stationList.filter(s => s.name === station)[0].stationOperator;
     const stationOperator =
