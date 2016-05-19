@@ -13,6 +13,7 @@ class SubjectForm extends Component {
   _onOptionClicked(option) {
     const { subject } = this.props.fields;
     subject.onChange(option);
+    this.props.history.push('/select-description');
   }
 
   _renderOption(option) {
