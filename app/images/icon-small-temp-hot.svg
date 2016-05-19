@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-small-temp-hot</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-small-temp-hot">
+            <g id="Group-6" transform="translate(4.000000, 4.000000)">
+                <ellipse id="Oval" stroke="#1168F4" stroke-width="2" cx="14.9818639" cy="27.2345938" rx="0.934206186" ry="0.934206186"></ellipse>
+                <path d="M14.9690722,26.3003876 L14.9690722,4.99999998" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <path d="M8.02655258,6.12371134 L11.5298598,6.12371134" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <path d="M8.02655258,12.9278351 L11.5298598,12.9278351" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <path d="M8.02655258,19.7319588 L11.5298598,19.7319588" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <path d="M26.5360825,2.05443711 L26.5360825,10.1691711" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <path d="M22.5601608,5.78350515 L30.6748948,5.78350515" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <path d="M11.5298598,23.3955711 C10.5836784,24.3036495 9.99212784,25.5781979 9.99212784,26.9931835 C9.99212784,29.7488536 12.2260577,31.9827835 14.9818639,31.9827835 C17.7376701,31.9827835 19.9716,29.7487175 19.9716,26.9931835 C19.9716,25.4400742 19.2619299,24.0532577 18.1493196,23.1381031 L18.1493196,4.15691134 C18.1246887,2.19691546 16.6339052,0.847521649 14.8512247,0.847521649 C12.9349113,0.847521649 11.5299959,2.44907629 11.5299959,4.09866804 L11.5299959,23.3955711 L11.5298598,23.3955711 Z" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <rect id="Rectangle-path" x="0.0302103093" y="0.0481731959" width="32.6597938" height="32.6597938"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

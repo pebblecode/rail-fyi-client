@@ -1,20 +1,155 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-      <title>Rail FYI</title>
+    <title>Rail FYI</title>
 
-      <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body>
+    <!-- TYPEKIT SHIZ -->
+    <script src="https://use.typekit.net/sxq6cmn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-    <div id="app"></div>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
 
-    <script src="/js/main.js"></script>
+  <div class="app-container" style="display: none;">
 
-  </body>
+    <div class="type">
+      <h1>This is a header</h1>
+
+      <p>This is some body text: To Rail FYI. Your one stop shop for Train based whinging. Slick, easy, to use and oh so fast Rail FYI will let you vent right from your mobile device!</p>
+
+      <button class="btn">this is a button</button>
+    </div> <!-- ./type -->
+
+    <span class="icon-small icon-clean"></span>
+    <span class="icon-large icon-train"></span>
+
+    <div class="app-header-container">
+      <h1 class="app-header-logo">Logotype</h1>
+    </div> <!-- ./app-header -->
+
+    <div class="progress-bar-container">
+      <ul class="progress-bar-list progress-1"> <!-- use 'progress-1' to set display of progress bar -->
+        <li class="progress-bar-dot"></li>
+        <li class="progress-bar-dot"></li>
+        <li class="progress-bar-dot"></li>
+        <li class="progress-bar-dot"></li>
+      </ul> <!-- ./progress-bar-list -->
+    </div> <!-- ./progress-bar-container -->
+
+    <div class="btn-group-container">
+      <ul class="btn-group-list">
+        <li class="btn-group-item">
+          <button class="btn">button item without left icon</button>
+          <span class="icon-small icon-chevron"></span>
+        </li> <!-- ./btn-group-item -->
+
+        <li class="btn-group-item">
+          <button class="btn">button item without left icon</button>
+          <span class="icon-small icon-search-2"></span>
+        </li> <!-- ./btn-group-item -->
+
+        <li class="btn-group-item">
+          <span class="icon-small icon-dirty"></span>
+          <button class="btn">button item with both icons</button>
+          <span class="icon-small icon-chevron"></span>
+        </li> <!-- ./btn-group-item -->
+
+        <li class="btn-group-item">
+          <span class="icon-small icon-no-tp"></span>
+          <button class="btn">button item with both icons</button>
+          <span class="icon-small icon-chevron"></span>
+        </li> <!-- ./btn-group-item -->
+      </ul> <!-- ./btn-group-list -->
+    </div> <!-- ./btn-group-container -->
+
+    <div class="message-container">
+      <span>This is some filler text for the message</span>
+      <button class="btn">this is an important bit</button>
+      <span>another bit of fluff</span>
+      <button class="btn">i like blue</button>
+      <span>more cruft and the ellipsis</span>
+      <span class="ellipsis">&hellip;</span>
+    </div> <!-- ./message-container -->
+
+    <div class="send-buttons-container">
+      <button class="btn send-btn">Send email</button>
+      <button class="btn send-btn">Tweet</button>
+    </div> <!-- ./send-buttons-container -->
+
+  </div> <!-- ./app-container -->
+
+  <div class="app-container">
+
+    <div class="app-header-container">
+      <h1 class="app-header-logo">Rail fyi</h1>
+    </div> <!-- ./app-header -->
+
+    <div class="progress-bar-container">
+      <ul class="progress-bar-list progress-1"> <!-- use 'progress-1' to set display of progress bar -->
+        <li class="progress-bar-dot"></li>
+        <li class="progress-bar-dot"></li>
+        <li class="progress-bar-dot"></li>
+        <li class="progress-bar-dot"></li>
+      </ul> <!-- ./progress-bar-list -->
+    </div> <!-- ./progress-bar-container -->
+
+    <div class="message-container">
+      <span>At</span>
+      <button class="btn">Clapham Junction</button>
+      <span class="ellipsis">&hellip;</span>
+    </div> <!-- ./message-container -->
+
+
+    <div class="bottom-container">
+      <p>Great, now please select a subject you’d like to give feedback on.</p>
+
+      <div class="btn-group-container">
+        <ul class="btn-group-list">
+          <li class="btn-group-item">
+            <span class="icon-small icon-toilet"></span>
+            <button class="btn">Toilet</button>
+            <span class="icon-small icon-chevron"></span>
+          </li> <!-- ./btn-group-item -->
+
+          <li class="btn-group-item">
+            <span class="icon-small icon-clean"></span>
+            <button class="btn">golf jingo yay</button>
+            <span class="icon-small icon-chevron"></span>
+          </li> <!-- ./btn-group-item -->
+
+          <li class="btn-group-item">
+            <span class="icon-small icon-staff"></span>
+            <button class="btn">Staff</button>
+            <span class="icon-small icon-chevron"></span>
+          </li> <!-- ./btn-group-item -->
+
+          <li class="btn-group-item">
+            <span class="icon-small icon-crowd-ok"></span>
+            <button class="btn">Crowd</button>
+            <span class="icon-small icon-chevron"></span>
+          </li> <!-- ./btn-group-item -->
+
+          <li class="btn-group-item">
+            <span class="icon-small icon-temp"></span>
+            <button class="btn">Temperature</button>
+            <span class="icon-small icon-chevron"></span>
+          </li> <!-- ./btn-group-item -->
+        </ul> <!-- ./btn-group-list -->
+      </div> <!-- ./btn-group-container -->
+    </div> <!-- ./bottom-container -->
+
+  </div> <!-- ./app-container -->
+
+  <!-- REACT SHIZ -->
+  <!-- ========== -->
+  <!-- <div id="app"></div> -->
+  <!-- <script src="/js/main.js"></script> -->
+
+</body>
 </html>

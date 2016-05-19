@@ -1,0 +1,72 @@
+// BUTTONS
+// ====================================
+button, .btn {
+  appearance: none;
+  background: 0;
+  outline: 0;
+  border: 0; // just add to non-send btns?
+  padding: 0;
+
+  &:not(.send-btn) {
+    font-size: $fs-medium;
+    padding-bottom: 1px;
+    background-image: linear-gradient(transparent calc(100% - 3px), $r-fyi-blue calc(100% - 3px));
+  }
+
+  &:hover {
+
+  }
+
+  &:active {
+
+  }
+
+  &:focus {
+
+  }
+}
+
+.btn-group-container {
+
+}
+
+.btn-group-list {
+
+}
+
+.btn-group-item {
+  @include clearfix;
+
+  border-top: 1px solid $r-fyi-blue;
+  padding: 0 20px;
+
+  .btn {
+    padding-top: 16px;
+  }
+
+  .icon-small {
+    margin: 10px 0;
+  }
+
+  .icon-small:first-child {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .icon-small:last-child {
+    float: right;
+  }
+}
+
+.send-btn {
+  font-size: $fs-large;
+  border: 3px solid $r-fyi-blue;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 12px;
+
+  &:first-child {
+    margin-bottom: 18px;
+  }
+}

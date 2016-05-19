@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-small-temp-cold</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-small-temp-cold">
+            <g id="Group-5" transform="translate(4.000000, 4.000000)">
+                <path d="M22.825,6.1875 L30.9375,6.1875" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <path d="M11.6875,23.65 C10.725,24.6125 10.175,25.85 10.175,27.225 C10.175,29.975 12.375,32.3125 15.2625,32.3125 C18.15,32.3125 20.35,30.1125 20.35,27.225 C20.35,25.7125 19.6625,24.2 18.5625,23.375 L18.5625,4.2625 C18.5625,2.3375 17.05,0.9625 15.2625,0.9625 C13.0625,0.825 11.6875,2.475 11.6875,4.125 L11.6875,23.65 L11.6875,23.65 Z" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <ellipse id="Oval" stroke="#1168F4" stroke-width="2" cx="15.125" cy="27.5" rx="0.9625" ry="0.9625"></ellipse>
+                <path d="M15.125,26.5375 L15.125,23" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <path d="M8.1125,6.1875 L11.6875,6.1875" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <path d="M8.1125,13.0625 L11.6875,13.0625" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <path d="M8.1125,19.9375 L11.6875,19.9375" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                <rect id="Rectangle-path" x="0" y="0" width="33" height="33"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,17 +1,12 @@
-@import 'vars';
-
 @import "./vendor/normalize.css";
-@import "./vendor/skeleton.css";
 
-@import "./layout/_header.scss";
-@import "./layout/_footer.scss";
+@import "vars";
+@import "mixins";
 
-.main-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.home-page {
-  flex: 1;
-}
+@import "layout";
+@import "type";
+@import "buttons";
+@import "icons";
+@import "progress-bar";
+@import "message";
+@import "header";

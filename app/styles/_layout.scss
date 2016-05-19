@@ -1,0 +1,23 @@
+// LAYOUT
+// ====================================
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.app-container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.bottom-container {
+  position: fixed;
+  bottom: -14px;
+}

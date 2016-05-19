@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-small-litter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-small-litter">
+            <g id="Group" transform="translate(6.000000, 7.000000)">
+                <g id="Group-12" transform="translate(19.090909, 13.090909) scale(-1, 1) translate(-19.090909, -13.090909) translate(8.181818, 0.000000)">
+                    <path d="M5.4320146,16.2674401 C7.30860376,11.6472566 7.7993583,3.20270044 7.7993583,3.20270044 L21.1042891,3.64929202 C21.0454093,4.42837489 18.8838746,33.9103371 12.4655327,18.5741243 L0.714072798,18.2628009 C0.714072798,18.2628009 1.55432451,22.7575257 4.55250972,22.8387899 C8.43875267,22.9443197 15.9774302,22.9853132 15.9774302,22.9853132" id="Shape" stroke="#1168F4" stroke-width="2"></path>
+                    <rect id="Rectangle-path" x="0.10546875" y="0.699928977" width="21.6072443" height="24.7819602"></rect>
+                </g>
+                <path d="M0.454545455,6.36363636 L5.45454545,6.36363636" id="Line" stroke="#1168F4" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M0.454545455,10.9090909 L5.45454545,10.9090909" id="Line" stroke="#1168F4" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M1.36363636,15.4545455 L6.36363636,15.4545455" id="Line" stroke="#1168F4" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M2.27272727,20 L7.27272727,20" id="Line" stroke="#1168F4" stroke-width="2" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
