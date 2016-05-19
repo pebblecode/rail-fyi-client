@@ -10,9 +10,9 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
-        <div className="logo">RAIL FYI</div>
-      </header>
+      <div className="app-header-container">
+        <h1 className="app-header-logo">Rail fyi</h1>
+      </div>
     );
   }
 
