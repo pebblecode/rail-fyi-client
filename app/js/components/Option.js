@@ -8,11 +8,14 @@ import Progress from '../components/ProgressBar';
 class Option extends Component {
   render() {
     const { option } = this.props;
-    const iconClasses = classnames('icon-small', option.icon);
+    const icon =
+      option.icon
+      ? <span className={classnames('icon-small', option.icon)}></span>
+      : null;
 
     return (
       <li className="btn-group-item" onClick={this.props.onClick}>
-        <span className={iconClasses}></span>
+        {icon}
         <button className="btn">{option.name}</button>
         <span className="icon-small icon-chevron"></span>
       </li>

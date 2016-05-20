@@ -3,6 +3,7 @@
 import React, { PropTypes, Component } from 'react';
 import { Link } from 'react-router';
 import stationList from '../data/station-list';
+import Option from '../components/Option';
 
 class NearestStation extends Component {
 
@@ -65,17 +66,21 @@ class NearestStation extends Component {
 
   render() {
     const stationName = this.state.nearestName;
-    const station =
-      <span onClick={this.props.onStationClick.bind(null, stationName)}>
-        {stationName}
-      </span>;
+    const findingNearest =
+      <Option option={{name: 'Finding nearest station...'}} />;
     const nearest =
-      <p>
-        Nearest station: {station} {this.state.distance}km
-      </p>;
+      <Option
+        option={{name: stationName}}
+        onClick={this.props.onStationClick.bind(null, stationName)} />;
+    let containerClasses = "btn-group-list";
+    if (!this.state.nearestCode) {
+      containerClasses += " disabled";
+    }
     return (
       <div>
-        {this.state.nearestCode ? nearest : 'Finding nearest station...'}
+        <ul className={containerClasses}>
+          {this.state.nearestCode ? nearest : findingNearest}
+        </ul>
       </div>);
   }
 }
