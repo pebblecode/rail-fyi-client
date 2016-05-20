@@ -2,78 +2,95 @@ const subjects = [
   {
     name: 'Toilet',
     icon: 'icon-toilet',
+    message: 'the toilets',
     options: [{
       name: 'Dirty',
-      icon: 'icon-dirty'
+      icon: 'icon-dirty',
+      message: 'were grim!'
     }, {
       name: 'No toilet paper',
-      icon: 'icon-no-tp'
+      icon: 'icon-no-tp',
+      message: 'had no bloody toilet paper!'
     }, {
       name: 'Blocked',
-      icon: 'icon-broken'
+      icon: 'icon-broken',
+      message: 'were blocked damnit!'
     }, {
       name: 'Broken',
-      icon: 'icon-broken'
+      icon: 'icon-broken',
+      message: 'were broken :('
     }, {
       name: 'Perfect',
-      icon: 'icon-clean'
+      icon: 'icon-clean',
+      message: 'spotless!'
     }]
   },
   {
     name: 'Cleanliness',
     icon: 'icon-clean',
+    message: 'the cleanliness was',
     options: [{
       name: 'Litter',
-      icon: 'icon-litter'
+      icon: 'icon-litter',
+      message: 'abysmall - litter everywhere!'
     }, {
       name: 'Dirty',
-      icon: 'icon-dirty'
+      icon: 'icon-dirty',
+      message: 'abysmall - it\'s super dirty!'
     }, {
       name: 'Super clean',
-      icon: 'icon-clean'
+      icon: 'icon-clean',
+      message: 'top notch!'
     }]
   },
   {
     name: 'Staff',
     icon: 'icon-staff',
+    message: 'a staff member was',
     options: [{
       name: 'Unfriendly',
-      icon: 'icon-unfriendly'
+      icon: 'icon-unfriendly',
+      message: 'so rude!'
     },{
       name: 'Friendly',
-      icon: 'icon-friendly'
+      icon: 'icon-friendly',
+      message: 'awesome!'
     }, {
       name: 'Aggressive',
-      icon: 'icon-agressive'
+      icon: 'icon-agressive',
+      message: 'aggressive.'
     }, {
       name: 'Uninformative',
-      icon: 'icon-uninformative'
-    }],
-    icon: 'icon-staff'
+      icon: 'icon-uninformative',
+      message: 'bloody clueless!'
+    }]
   },
   {
     name: 'Crowd',
     icon: 'icon-crowded',
+    message: 'the crowd was',
     options: [{
       name: 'Too crowded',
-      icon: 'icon-crowded'
-    }, {
-      name: 'Just right',
-      icon: 'icon-crowd-ok'
+      icon: 'icon-crowded',
+      message: 'humongous!'
     }, {
       name: 'No one\'s here',
-      icon: 'icon-crowd-empty'
+      icon: 'icon-crowd-empty',
+      message: 'nowhere to be seen!'
     }]
   },
   {
     name: 'Temperature',
     icon: 'icon-temp',
+    message: 'the temperature was',
     options: [{
       name: 'Too hot',
-      icon: 'icon-temp-hot'
+      icon: 'icon-temp-hot',
+      message: 'absolutely baking!'
     }, {
       name: 'Too cold',
-      icon: 'icon-temp-cold'
+      icon: 'icon-temp-cold',
+      message: 'positively freezing - brr!'
     }],
   }
 ];
