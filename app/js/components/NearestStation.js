@@ -72,13 +72,18 @@ class NearestStation extends Component {
       <Option
         option={{name: stationName}}
         onClick={this.props.onStationClick.bind(null, stationName)} />;
-    let containerClasses = "btn-group-list";
+    let iconClasses = "icon-large icon-location";
+    let ulClasses = "btn-group-list";
     if (!this.state.nearestCode) {
-      containerClasses += " disabled";
+      ulClasses += " disabled";
+      iconClasses += " loading";
     }
     return (
       <div>
-        <ul className={containerClasses}>
+        <div className="center-dis">
+          <span className={iconClasses}></span>
+        </div>
+        <ul className={ulClasses}>
           {this.state.nearestCode ? nearest : findingNearest}
         </ul>
       </div>);
