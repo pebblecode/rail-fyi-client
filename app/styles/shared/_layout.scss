@@ -1,5 +1,7 @@
 // LAYOUT
 // ====================================
+$small-break: 500px;
+
 *,
 *::before,
 *:after {
@@ -20,12 +22,19 @@ ul {
 .app-container {
   width: 100%;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: $small-break;
 }
 
 .bottom-container {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  max-width: 500px;
+  max-width: $small-break;
+
+  @media screen and ( max-width: $small-break) {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  @media screen and ( min-width: $small-break) {
+    margin-top: 60px;
+  }
 }
