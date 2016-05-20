@@ -8,6 +8,7 @@
 		stroke: #1168F4;
 		stroke-width: 3.5;
 		stroke-miterlimit: 10;
+		stroke-linecap: round;
 	}
 
 	.fill-white {
@@ -18,12 +19,14 @@
 		fill:#1168F4;
 	}
 
-	#ring-inner {
-		stroke-dasharray: 20px;
+	@keyframes dash {
+		to { stroke-dashoffset: 0; }
 	}
 
 	#ring-outer {
-
+		stroke-dasharray: 32;
+		stroke-dashoffset: 10000;
+		animation: dash 120s linear infinite;
 	}
 </style>
 <ellipse id="ring-inner" class="stroke-blue" cx="60.2" cy="110.8" rx="18.8" ry="5.6"/>
