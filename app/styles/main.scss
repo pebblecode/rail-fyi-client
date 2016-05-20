@@ -1,12 +1,14 @@
 @import "./vendor/normalize.css";
 
-@import "vars";
-@import "mixins";
+@import "./shared/vars";
+@import "./shared/mixins";
 
-@import "layout";
-@import "type";
-@import "buttons";
-@import "icons";
-@import "progress-bar";
-@import "message";
-@import "header";
+@import "./shared/layout";
+@import "./shared/type";
+@import "./shared/buttons";
+@import "./shared/icons";
+@import "./shared/progress-bar";
+@import "./shared/message";
+@import "./shared/header";
+
+@import "./pages/homepage";

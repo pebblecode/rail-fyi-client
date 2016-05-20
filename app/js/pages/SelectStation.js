@@ -19,8 +19,10 @@ class SelectStation extends Component {
         <div className="center-dis">
           <span className="icon-large icon-location"></span>
         </div>
-        <p>Which station would you like to give us feedback on?</p>
-        <StationForm {...this.props} />
+        <div className="bottom-container">
+          <p>Which station would you like to give us feedback on?</p>
+          <StationForm {...this.props} />
+        </div>
       </section>
     );
   }

@@ -34,8 +34,10 @@ class SelectDescription extends Component {
       <section className="select-description">
         <ProgressBar stage={3} />
         <InProgressMessage />
-        <p>Now go on, tell them what you thought.</p>
-        <DescriptionForm {...this.props} options={descriptions}/>
+        <div className="bottom-container">
+          <p>Now go on, tell them what you thought.</p>
+          <DescriptionForm {...this.props} options={descriptions}/>
+        </div>
       </section>
     );
   }
