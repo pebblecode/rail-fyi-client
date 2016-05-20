@@ -15,7 +15,6 @@ class SelectStation extends Component {
     return (
       <section className="select-station">
         <ProgressBar stage={1} />
-        <InProgressMessage />
         <div className="bottom-container">
           <p>Which station would you like to give us feedback on?</p>
           <StationForm {...this.props} />
