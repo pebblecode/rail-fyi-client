@@ -15,7 +15,6 @@ class SelectStation extends Component {
     return (
       <section className="select-station">
         <ProgressBar stage={1} />
-        <InProgressMessage />
         <div className="center-dis">
           <span className="icon-large icon-location"></span>
         </div>
