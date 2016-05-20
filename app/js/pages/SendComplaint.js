@@ -21,15 +21,19 @@ class SendComplaint extends Component {
       config.stationOperators.filter(o => o.code === stationOperatorCode)[0];
     const finalMessage = message.buildFinalMessageString(station, subject, description);
     const emailEndpoint =
-      "mailto:"
-      + stationOperator.email
-      + "?body="
-      + encodeURI(finalMessage);
+      stationOperator.email
+      ? "mailto:"
+          + stationOperator.email
+          + "?body="
+          + encodeURI(finalMessage)
+      : null;
     const tweetEndpoint =
-      "http://twitter.com/home/?status="
-      + stationOperator.twitter
-      + " "
-      + finalMessage;
+      stationOperator.twitter
+      ? "http://twitter.com/home/?status="
+          + stationOperator.twitter
+          + " "
+          + finalMessage
+      : null;
 
     return { emailEndpoint, tweetEndpoint };
   }

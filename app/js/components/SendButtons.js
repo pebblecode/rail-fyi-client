@@ -5,10 +5,18 @@ import React, { PropTypes, Component } from 'react';
 class SendButtons extends Component {
   render() {
     const { emailEndpoint, tweetEndpoint } = this.props;
+    const sendEmail =
+      emailEndpoint
+      ? <a className="btn send-btn" href={emailEndpoint}>Send email</a>
+      : null;
+    const sendTweet =
+      tweetEndpoint
+      ? <a className="btn send-btn" href={tweetEndpoint}>Tweet</a>
+      : null;
     return (
       <div className="send-buttons-container">
-        <a className="btn send-btn" href={emailEndpoint}>Send email</a>
-        <a className="btn send-btn" href={tweetEndpoint}>Tweet</a>
+        {sendEmail}
+        {sendTweet}
       </div>
     );
   }

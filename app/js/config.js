@@ -82,17 +82,17 @@ const stationOperators = [
   { name: 'Abellio Greater Anglia',
     code: 'LE',
     twitter: '@greateranglia',
-    email: ''
+    email: 'Contactcentre@abelliogreateranglia.co.uk'
   },
   { name: 'Arriva Trains Wales',
     code: 'AW',
     twitter: '@ArrivaTW',
-    email: ''
+    email: 'customer.services@arrivatrainswales.co.uk'
   },
   { name: 'c2c',
     code: 'CC',
     twitter: '@c2c_Rail',
-    email: ''
+    email: 'contact@c2crail.co.uk'
   },
   { name: 'Caledonian Sleeper',
     code: 'CS',
@@ -107,12 +107,12 @@ const stationOperators = [
   { name: 'CrossCountry',
     code: 'XC',
     twitter: '@crosscountryuk',
-    email: ''
+    email: 'customer.relations@crosscountrains.co.uk'
   },
   { name: 'East Midlands Trains',
     code: 'EM',
     twitter: '@EMTrains',
-    email: ''
+    email: 'getintouch@eastmidlandstrains.co.uk'
   },
   { name: 'East Coast',
     code: 'GR',
@@ -127,22 +127,22 @@ const stationOperators = [
   { name: 'First Great Western',
     code: 'GW',
     twitter: '@GWRHelp',
-    email: ''
+    email: 'GWRfeedback@GWR.com'
   },
   { name: 'First Hull Trains',
     code: 'HT',
     twitter: '@FirstHTrains',
-    email: ''
+    email: 'customer.services@hulltrains.co.uk'
   },
   { name: 'First Scotrail',
     code: 'SR',
     twitter: '@ScotRail',
-    email: ''
+    email: 'customer.relations@scotrail.co.uk'
   },
   { name: 'First Transpennine Express',
     code: 'TP',
     twitter: '@TPExpressTrains',
-    email: ''
+    email: 'tpecustomer.relations@firstgroup.com'
   },
   { name: 'Gatwick Express',
     code: 'GX',
@@ -157,7 +157,7 @@ const stationOperators = [
   { name: 'Grand Central',
     code: 'GC',
     twitter: '@GC_Rail',
-    email: ''
+    email: 'customer.services@grandcentralrail.com'
   },
   { name: 'Govia Thameslink Railway (Great Northern)',
     code: 'GN',
@@ -167,7 +167,7 @@ const stationOperators = [
   { name: 'Govia Thameslink Railway (Thameslink)',
     code: 'TL',
     twitter: '@TLRailUK',
-    email: ''
+    email: 'customerservices@thameslinkrailway.com'
   },
   { name: 'Heathrow Express',
     code: 'HX',
@@ -177,17 +177,17 @@ const stationOperators = [
   { name: 'Island Lines',
     code: 'IL',
     twitter: '@NRE_Island_Line',
-    email: ''
+    email: 'customerrelations@swtrains.co.uk'
   },
   { name: 'London Midland',
     code: 'LM',
     twitter: '@LondonMidland',
-    email: ''
+    email: 'comments@londonmidland.com'
   },
   { name: 'London Overground',
     code: 'LO',
     twitter: '@LDNOverground',
-    email: ''
+    email: 'overgroundinfo@tfl.gov.uk'
   },
   { name: 'LUL Bakerloo Line',
     code: 'LT',
@@ -207,17 +207,17 @@ const stationOperators = [
   { name: 'Merseyrail',
     code: 'ME',
     twitter: '@merseyrail',
-    email: ''
+    email: 'comment@merseyrail.org'
   },
   { name: 'Northern Rail',
     code: 'NT',
     twitter: '@northernassist',
-    email: ''
+    email: 'enquiries@northernrailway.co.uk'
   },
   { name: 'South West Trains',
     code: 'SW',
     twitter: '@SW_Trains',
-    email: ''
+    email: 'customerrelations@swtrains.co.uk'
   },
   { name: 'Southeastern',
     code: 'SE',
@@ -227,9 +227,9 @@ const stationOperators = [
   { name: 'Southern',
     code: 'SN',
     twitter: '@SoutherRailUK',
-    email: ''
+    email: 'comments@southernrailway.com'
   },
-  { name: 'TfL Rail (will become Crossrail)',
+  { name: 'TfL Rail',
     code: 'XR',
     twitter: '@Tfl',
     email: ''
@@ -242,7 +242,8 @@ const stationOperators = [
   {
     name: 'Network Rail',
     code: 'NR',
-    twitter: '@networkrail'
+    twitter: '@networkrail',
+    email: ''
   }
 ];
 
