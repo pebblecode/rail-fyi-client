@@ -7,6 +7,14 @@ import { reduxForm } from 'redux-form';
 import Option from '../components/Option';
 
 class SubjectForm extends Component {
+  constructor(props) {
+    super(props);
+
+    // Delete old selected subject & description if present (i.e. in back navigation case)
+    const { subject, description } = props.fields;
+    subject.onChange(null);
+    description.onChange(null);
+  }
 
   _onOptionClicked(option) {
     const { subject } = this.props.fields;
@@ -58,6 +66,6 @@ function mapStateToProps(state) {
 
 export default reduxForm({
   form: 'wizard',
-  fields: ['subject'],
+  fields: ['subject', 'description'],
   destroyOnUnmount: false
 })(connect(mapStateToProps)(SubjectForm));

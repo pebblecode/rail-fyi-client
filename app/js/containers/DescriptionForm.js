@@ -7,6 +7,13 @@ import { reduxForm } from 'redux-form';
 import Option from '../components/Option';
 
 class DescriptionForm extends Component {
+  constructor(props) {
+    super(props);
+
+    // Delete old selected description if present (i.e. in back navigation case)
+    const { description } = props.fields;
+    description.onChange(null);
+  }
 
   _onOptionClicked(option) {
     const { description } = this.props.fields;

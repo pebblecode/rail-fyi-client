@@ -8,6 +8,15 @@ import NearestStation from '../components/NearestStation';
 import StationDropdown from '../components/StationDropdown';
 
 class StationForm extends Component {
+  constructor(props) {
+    super(props);
+
+    // Delete old selected station, subject & description if present (i.e. in back navigation case)
+    const { station, subject, description } = props.fields;
+    station.onChange(null);
+    subject.onChange(null);
+    description.onChange(null);
+  }
 
   _onSelectItem(item) {
     const { station } = this.props.fields;
@@ -40,6 +49,6 @@ function mapStateToProps(state) {
 
 export default reduxForm({
   form: 'wizard',
-  fields: ['station'],
+  fields: ['station', 'subject', 'description'],
   destroyOnUnmount: false
 })(connect(mapStateToProps)(StationForm));
