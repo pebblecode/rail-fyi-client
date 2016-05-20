@@ -8,6 +8,7 @@ import config from '../config';
 import DescriptionForm from '../containers/DescriptionForm';
 import ProgressBar from '../components/ProgressBar';
 import InProgressMessage from '../components/InProgressMessage';
+import StationOperator from '../components/StationOperator';
 
 class SelectDescription extends Component {
   _findDescriptions() {
@@ -31,6 +32,7 @@ class SelectDescription extends Component {
     return (
       <section className="select-description">
         <ProgressBar stage={3} />
+        <StationOperator />
         <InProgressMessage />
         <div className="bottom-container">
           <p>Now go on, tell them what you thought.</p>

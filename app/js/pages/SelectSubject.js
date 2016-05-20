@@ -7,6 +7,7 @@ import config from '../config';
 import ProgressBar from '../components/ProgressBar';
 import InProgressMessage from '../components/InProgressMessage';
 import SubjectForm from '../containers/SubjectForm';
+import StationOperator from '../components/StationOperator';
 
 class SelectSubject extends Component {
   render() {
@@ -20,6 +21,7 @@ class SelectSubject extends Component {
     return (
       <section className="select-category">
         <ProgressBar stage={2} />
+        <StationOperator />
         <InProgressMessage />
         <div className="bottom-container">
           <p>Please select the relevant subject you would like to give feedback on</p>
