@@ -21,7 +21,15 @@
 
 .icon-location {
   height: 140px;
-  background-image: url("../images/icon-large-location-ani.svg");
+  background-image: url("../images/icon-large-location.svg");
+  position: fixed;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &.loading {
+    background-image: url("../images/icon-large-location-ani.svg");
+  }
 }
 
 .icon-agressive { background-image: url("../images/icon-small-agressive.svg"); }
