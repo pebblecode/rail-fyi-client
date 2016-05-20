@@ -45,10 +45,11 @@ class SendComplaint extends Component {
       <section className="select-complaint">
         <ProgressBar stage={4} />
         <p>Here is your message.</p>
-        <p>Anything else you'd like to add?</p>
         <InProgressMessage />
         <div className="bottom-container">
-          <p>Ready? Choose your method of weapon below.</p>
+          <div className="center-dis">
+            <p>Ready? Choose your weapon</p>
+          </div>
           <SendButtons tweetEndpoint={tweetEndpoint} emailEndpoint={emailEndpoint} />
         </div>
       </section>
