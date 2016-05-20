@@ -19,7 +19,7 @@ class StationForm extends Component {
     return (
       <div>
         <NearestStation onStationClick={this._onSelectItem.bind(this)} />
-        <StationDropdown onSelectItem={this._onSelectItem.bind(this)} />
+        {/*<StationDropdown onSelectItem={this._onSelectItem.bind(this)} />*/}
       </div>
     );
   }
