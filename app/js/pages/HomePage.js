@@ -17,10 +17,12 @@ class HomePage extends Component {
   render() {
     return (
       <section className="home-page">
-        <span className="icon-large icon-train"></span>
-        <h1>Hello and Welcome</h1>
-        <p>To Rail FYI. Your one stop shop for Train based whinging. Slick, easy, to use and oh so fast Rail FYI will let you vent right from your mobile device!</p>
-        <Link className="btn" to="/select-station">Start</Link>
+        <div className="center-dis">
+          <span className="icon-large icon-train"></span>
+          <h1>Hello and Welcome</h1>
+          <p>To Rail FYI. Your one stop shop for Train based whinging. Slick, easy, to use and oh so fast Rail FYI will let you vent right from your mobile device!</p>
+          <Link className="btn" to="/select-station">Start</Link>
+        </div>
       </section>
     );
   }

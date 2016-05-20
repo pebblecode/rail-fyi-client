@@ -6,6 +6,7 @@ button, .btn {
   outline: 0;
   border: 0; // just add to non-send btns?
   padding: 0;
+  text-decoration: none;
 
   &:not(.send-btn) {
     font-size: $fs-medium;
@@ -56,6 +57,11 @@ button, .btn {
   .icon-small:last-child {
     float: right;
   }
+}
+
+.send-buttons-container {
+  width: 100%;
+  padding: 0 20px;
 }
 
 .send-btn {

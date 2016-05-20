@@ -40,10 +40,10 @@ class SendComplaint extends Component {
     return (
       <section className="select-complaint">
         <ProgressBar stage={4} />
-        <div>Here is your message.</div>
-        <div>Anything else you'd like to add?</div>
+        <p>Here is your message.</p>
+        <p>Anything else you'd like to add?</p>
         <InProgressMessage />
-        Ready? Choose your method of weapon below.
+        <p>Ready? Choose your method of weapon below.</p>
         <SendButtons onTweetClick={this._onTweetClick} onEmailClick={this._onEmailClick} />
       </section>
     );
