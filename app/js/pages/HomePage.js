@@ -21,7 +21,9 @@ class HomePage extends Component {
           <span className="icon-large icon-train"></span>
           <h1>Hello and Welcome</h1>
           <p>To Rail FYI. Your one stop shop for Train based whinging. Slick, easy, to use and oh so fast Rail FYI will let you vent right from your mobile device!</p>
-          <Link className="btn" to="/select-station">Start</Link>
+          <div className="bottom-container">
+            <Link className="btn" to="/select-station">Start</Link>
+          </div>
         </div>
       </section>
     );

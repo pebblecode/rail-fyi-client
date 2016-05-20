@@ -43,8 +43,10 @@ class SendComplaint extends Component {
         <p>Here is your message.</p>
         <p>Anything else you'd like to add?</p>
         <InProgressMessage />
-        <p>Ready? Choose your method of weapon below.</p>
-        <SendButtons onTweetClick={this._onTweetClick} onEmailClick={this._onEmailClick} />
+        <div className="bottom-container">
+          <p>Ready? Choose your method of weapon below.</p>
+          <SendButtons onTweetClick={this._onTweetClick} onEmailClick={this._onEmailClick} />
+        </div>
       </section>
     );
   }

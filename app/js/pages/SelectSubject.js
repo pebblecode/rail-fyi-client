@@ -21,8 +21,10 @@ class SelectSubject extends Component {
       <section className="select-category">
         <ProgressBar stage={2} />
         <InProgressMessage />
-        <p>Please select the relevant subject you would like to give feedback on</p>
-        <SubjectForm {...this.props} options={options}/>
+        <div className="bottom-container">
+          <p>Please select the relevant subject you would like to give feedback on</p>
+          <SubjectForm {...this.props} options={options}/>
+        </div>
       </section>
     );
   }
