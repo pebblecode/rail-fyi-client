@@ -19,23 +19,27 @@ class SendComplaint extends Component {
       stationList.filter(s => s.name === station)[0].stationOperator;
     const stationOperator =
       config.stationOperators.filter(o => o.code === stationOperatorCode)[0];
-    const tweet =
+    const finalMessage = message.buildFinalMessageString(station, subject, description);
+    const emailEndpoint =
+      stationOperator.email
+      ? "mailto:"
+          + stationOperator.email
+          + "?body="
+          + encodeURI(finalMessage)
+      : null;
+    const tweetEndpoint =
       stationOperator.twitter
-        + ' '
-        + message.buildFinalMessageString(station, subject, description);
+      ? "http://twitter.com/home/?status="
+          + stationOperator.twitter
+          + " "
+          + finalMessage
+      : null;
 
-    return tweet;
-  }
-  _onTweetClick() {
-    console.log('do the twitter stuff here');
-  }
-
-  _onEmailClick() {
-    console.log('do the email stuff here');
+    return { emailEndpoint, tweetEndpoint };
   }
 
   render() {
-    const tweet = this._buildMessage();
+    const { emailEndpoint, tweetEndpoint } = this._buildMessage();
 
     return (
       <section className="select-complaint">
@@ -45,7 +49,7 @@ class SendComplaint extends Component {
         <InProgressMessage />
         <div className="bottom-container">
           <p>Ready? Choose your method of weapon below.</p>
-          <SendButtons onTweetClick={this._onTweetClick} onEmailClick={this._onEmailClick} />
+          <SendButtons tweetEndpoint={tweetEndpoint} emailEndpoint={emailEndpoint} />
         </div>
       </section>
     );
