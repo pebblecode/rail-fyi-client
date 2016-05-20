@@ -4,13 +4,19 @@ import React, { PropTypes, Component } from 'react';
 
 class SendButtons extends Component {
   render() {
+    const { emailEndpoint, tweetEndpoint } = this.props;
     return (
       <div className="send-buttons-container">
-        <button className="btn send-btn" onClick={this.props.onEmailClick}>Send email</button>
-        <button className="btn send-btn" onClick={this.props.onTweetClick}>Tweet</button>
+        <a className="btn send-btn" href={emailEndpoint}>Send email</a>
+        <a className="btn send-btn" href={tweetEndpoint}>Tweet</a>
       </div>
     );
   }
 }
+
+SendButtons.propTypes = {
+  emailEndpoint: PropTypes.string,
+  tweetEndpoint: PropTypes.string
+};
 
 export default SendButtons;

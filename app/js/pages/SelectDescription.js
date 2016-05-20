@@ -28,8 +28,6 @@ class SelectDescription extends Component {
   render() {
     const descriptions = this._findDescriptions();
 
-    console.log(descriptions);
-
     return (
       <section className="select-description">
         <ProgressBar stage={3} />
