@@ -12,11 +12,17 @@
 
 .icon-large {
   width: 120px;
-  height: 120px;
 }
 
-.icon-location { background-image: url("../images/icon-large-location.svg"); }
-.icon-train { background-image: url("../images/icon-large-train.svg"); }
+.icon-train {
+  height: 120px;
+  background-image: url("../images/icon-large-train-ani.svg");
+}
+
+.icon-location {
+  height: 140px;
+  background-image: url("../images/icon-large-location-ani.svg");
+}
 
 .icon-agressive { background-image: url("../images/icon-small-agressive.svg"); }
 .icon-broken { background-image: url("../images/icon-small-broken.svg"); }
