@@ -8,6 +8,7 @@ button, .btn {
   padding: 0;
   text-decoration: none;
   display: inline-block;
+  transition: color .25s ease-in-out;
 
   &:not(.send-btn) {
     font-size: $fs-medium;
@@ -16,7 +17,11 @@ button, .btn {
   }
 
   &:hover {
+    color: $r-fyi-blue-hover;
 
+    &:not(.send-btn) {
+      background-image: linear-gradient(transparent calc(100% - 3px), $r-fyi-blue-hover calc(100% - 3px));
+    }
   }
 
   &:active {
@@ -41,6 +46,7 @@ button, .btn {
 
   border-top: 1px solid $r-fyi-blue;
   padding: 0 20px;
+  cursor: pointer;
 
   .btn {
     padding-top: 16px;
@@ -58,6 +64,14 @@ button, .btn {
   .icon-small:last-child {
     float: right;
   }
+
+  &:hover .btn {
+    color: $r-fyi-blue-hover;
+
+    &:not(.send-btn) {
+      background-image: linear-gradient(transparent calc(100% - 3px), $r-fyi-blue-hover calc(100% - 3px));
+    }
+  }
 }
 
 .send-buttons-container {
@@ -72,8 +86,13 @@ button, .btn {
   width: 100%;
   text-align: center;
   padding: 10px 0 12px;
+  transition: color .25s ease-in-out, border-color .25s ease-in-out;
 
   &:first-child {
     margin-bottom: 18px;
+  }
+
+  &:hover {
+    border: 3px solid $r-fyi-blue-hover;
   }
 }
