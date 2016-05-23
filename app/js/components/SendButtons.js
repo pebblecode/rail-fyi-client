@@ -7,11 +7,11 @@ class SendButtons extends Component {
     const { emailEndpoint, tweetEndpoint } = this.props;
     const sendEmail =
       emailEndpoint
-      ? <a className="btn send-btn" href={emailEndpoint}>Send email</a>
+      ? <a className="btn send-btn" target="_blank" href={emailEndpoint}>Send email</a>
       : null;
     const sendTweet =
       tweetEndpoint
-      ? <a className="btn send-btn" href={tweetEndpoint}>Tweet</a>
+      ? <a className="btn send-btn" target="_blank" href={tweetEndpoint}>Tweet</a>
       : null;
     return (
       <div className="send-buttons-container">
