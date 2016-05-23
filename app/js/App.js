@@ -30,7 +30,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('On the app page: ', this.props.stage);
     return (
       <div className="app-container">
         <Header />

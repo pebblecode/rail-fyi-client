@@ -19,7 +19,9 @@ class SelectStation extends Component {
     return (
       <section className="select-station">
         <div className="bottom-container">
-          <p>Which station would you like to give us feedback on?</p>
+          <ReactCSSTransitionGroup transitionName="selectStationDescription" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+            <p>Which station would you like to give us feedback on?</p>
+          </ReactCSSTransitionGroup>
           <StationForm {...this.props} />
         </div>
       </section>

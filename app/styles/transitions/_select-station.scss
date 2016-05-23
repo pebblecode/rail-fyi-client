@@ -1,0 +1,17 @@
+.selectStationDescription-enter {
+  opacity: 0.01;
+}
+
+.selectStationDescription-enter.selectStationDescription-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.selectStationDescription-leave {
+  opacity: 1;
+}
+
+.selectStationDescription-leave.selectStationDescription-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
