@@ -3,8 +3,6 @@ node_js:
 - 4.2.2
 before_install:
 - npm i -g npm@^3.0.0
-before_script:
-  - npm install
 script: gulp prod
 deploy:
   provider: heroku
