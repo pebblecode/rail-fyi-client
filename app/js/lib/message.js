@@ -1,54 +1,48 @@
-import { Link } from 'react-router';
 import config from '../config';
 
-const buildInProgressMessage = (station, subject, description) => {
+const getConfigParts = (type, configMessage) => {
+  const parts = [];
+  if (configMessage.pre) {
+    parts.push({ type: 'plain', text: configMessage.pre });
+  }
+  parts.push({ type, text: configMessage.main });
+  if (configMessage.post) {
+    parts.push({ type: 'plain', text: configMessage.post });
+  }
+  return parts;
+};
+
+const buildInProgressMessageParts = (station, subject, description) => {
+  const ellipsis = { type: 'ellipsis', text: '...' };
+
   if (!station) {
-    return <div>..</div>;
+    return [ellipsis];
   }
-  const stationLink = <Link className="btn" to="/select-station">{station}</Link>;
+
+  let parts = [
+    { type: 'plain', text: 'At' },
+    { type: 'station', text: station }
+  ];
+
   if (!subject) {
-    return (
-      <div className="message-container">
-        <span>At</span>
-        {stationLink}
-        <span className="ellipsis">&hellip;</span>
-      </div>
-    );
+    parts.push(ellipsis);
+    return parts;
   }
+
   const subjectConfig =
     config.subjects.filter(s => s.name === subject)[0];
-  const subjectLink =
-    <Link className="btn" to="/select-subject">
-      {subjectConfig.message}
-    </Link>;
+  parts = parts.concat(getConfigParts('subject', subjectConfig.message));
+
   if (!description) {
-    return (
-      <div className="message-container">
-        <span>At</span>
-        {stationLink}
-        {subjectLink}
-        <span className="ellipsis">&hellip;</span>
-      </div>
-    );
+    parts.push(ellipsis);
+    return parts;
   }
+
   const descriptionConfig =
     subjectConfig.options.filter(o => o.name === description)[0];
-  const descriptionLink =
-    <Link className="btn" to="/select-description">
-      {descriptionConfig.message}
-    </Link>;
-  return (
-    <div className="message-container">
-      <span>At</span>
-      {stationLink}
-      {subjectLink}
-      {descriptionLink}
-    </div>
-  );
+  parts = parts.concat(getConfigParts('description', descriptionConfig.message));
+
+  return parts;
 };
 
-const buildFinalMessageString = (station, subject, description) => {
-  return 'At ' + station + ' the ' + subject + ' was ' + description;
-};
-
-export default { buildInProgressMessage, buildFinalMessageString };
+export default { buildInProgressMessageParts };

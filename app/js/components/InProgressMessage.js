@@ -8,7 +8,23 @@ import message from '../lib/message';
 class InProgressMessage extends Component {
   render() {
     const { station, subject, description } = this.props;
-    return message.buildInProgressMessage(station, subject, description);
+    const messageParts =
+      message.buildInProgressMessageParts(station, subject, description)
+        .map((p, idx) => {
+          switch (p.type) {
+            case 'ellipsis':
+              return <span className="ellipsis" key={idx}>&hellip;</span>;
+            case 'plain':
+              return <span key={idx}>{p.text}</span>;
+            default:
+              return <Link className="btn" to={"/select-" + p.type} key={idx}>{p.text}</Link>;
+          }
+        });
+    return (
+      <div className="message-container">
+        {messageParts}
+      </div>
+    );
   }
 }
 

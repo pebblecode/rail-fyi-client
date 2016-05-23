@@ -2,95 +2,179 @@ const subjects = [
   {
     name: 'Toilet',
     icon: 'icon-toilet',
-    message: 'the toilets',
+    message: {
+      pre: 'the',
+      main: 'toilets',
+      post: '',
+    },
     options: [{
       name: 'Dirty',
       icon: 'icon-dirty',
-      message: 'were grim!'
+      message: {
+        pre: 'were',
+        main: 'grim',
+        post: '!'
+      }
     }, {
       name: 'No toilet paper',
       icon: 'icon-no-tp',
-      message: 'had no bloody toilet paper!'
+      message: {
+        pre: 'had no',
+        main: 'bloomin\' toilet paper',
+        post: '!'
+      }
     }, {
       name: 'Blocked',
       icon: 'icon-broken',
-      message: 'were blocked damnit!'
+      message: {
+        pre: 'were',
+        main: 'blocked',
+        post: ':O'
+      }
     }, {
       name: 'Broken',
       icon: 'icon-broken',
-      message: 'were broken :('
+      message: {
+        pre: 'were',
+        main: 'broken',
+        post: ':('
+      }
     }, {
       name: 'Perfect',
       icon: 'icon-clean',
-      message: 'spotless!'
+      message: {
+        pre: 'were',
+        main: 'spotless',
+        post: '!'
+      }
     }]
   },
   {
     name: 'Cleanliness',
     icon: 'icon-clean',
-    message: 'the cleanliness was',
+    message: {
+      pre: 'the',
+      main: 'cleanliness',
+      post: 'was'
+    },
     options: [{
       name: 'Litter',
       icon: 'icon-litter',
-      message: 'abysmall - litter everywhere!'
+      message: {
+        pre: 'abysmall -',
+        main: 'litter everywhere',
+        post: '!'
+      }
     }, {
       name: 'Dirty',
       icon: 'icon-dirty',
-      message: 'abysmall - it\'s super dirty!'
+      message: {
+        pre: 'abysmall - it\'s',
+        main: 'super dirty',
+        post: '!'
+      }
     }, {
       name: 'Super clean',
       icon: 'icon-clean',
-      message: 'top notch!'
+      message: {
+        pre: '',
+        main: 'top notch',
+        post: '!'
+      }
     }]
   },
   {
     name: 'Staff',
     icon: 'icon-staff',
-    message: 'a staff member was',
+    message: {
+      pre: 'a',
+      main: 'staff member',
+      post: 'was'
+    },
     options: [{
       name: 'Unfriendly',
       icon: 'icon-unfriendly',
-      message: 'so rude!'
+      message: {
+        pre: 'so',
+        main: 'rude',
+        post: '!'
+      }
     },{
       name: 'Friendly',
       icon: 'icon-friendly',
-      message: 'awesome!'
+      message: {
+        pre: '',
+        main: 'awesome',
+        post: '!'
+      }
     }, {
       name: 'Aggressive',
       icon: 'icon-agressive',
-      message: 'aggressive.'
+      message: {
+        pre: '',
+        main: 'aggressive',
+        post: '.'
+      }
     }, {
       name: 'Uninformative',
       icon: 'icon-uninformative',
-      message: 'bloody clueless!'
+      message: {
+        pre: '',
+        main: 'bloomin\' clueless',
+        post: '!'
+      }
     }]
   },
   {
     name: 'Crowd',
     icon: 'icon-crowded',
-    message: 'the crowd was',
+    message: {
+      pre: 'the',
+      main: 'crowd',
+      post: 'was'
+    },
     options: [{
       name: 'Too crowded',
       icon: 'icon-crowded',
-      message: 'humongous!'
+      message: {
+        pre: '',
+        main: 'humongous',
+        post: '!'
+      }
     }, {
       name: 'No one\'s here',
       icon: 'icon-crowd-empty',
-      message: 'nowhere to be seen!'
+      message: {
+        pre: '',
+        main: 'nowhere',
+        post: 'to be seen!'
+      }
     }]
   },
   {
     name: 'Temperature',
     icon: 'icon-temp',
-    message: 'the temperature was',
+    message: {
+      pre: 'the',
+      main: 'temperature',
+      post: 'was'
+    },
     options: [{
       name: 'Too hot',
       icon: 'icon-temp-hot',
-      message: 'absolutely baking!'
+      message: {
+        pre: '',
+        main: 'absolutely baking',
+        post: '!'
+      }
     }, {
       name: 'Too cold',
       icon: 'icon-temp-cold',
-      message: 'positively freezing - brr!'
+      message: {
+        pre: 'positively',
+        main: 'freezing',
+        post: '- brr!'
+      }
     }],
   }
 ];

@@ -19,7 +19,11 @@ class SendComplaint extends Component {
       stationList.filter(s => s.name === station)[0].stationOperator;
     const stationOperator =
       config.stationOperators.filter(o => o.code === stationOperatorCode)[0];
-    const finalMessage = message.buildFinalMessageString(station, subject, description);
+    const finalMessage =
+      message
+        .buildInProgressMessageParts(station, subject, description)
+        .map(p => p.text)
+        .join(' ');
     const emailEndpoint =
       stationOperator.email
       ? "mailto:"
@@ -58,8 +62,9 @@ class SendComplaint extends Component {
 }
 
 SendComplaint.propTypes = {
-  message: PropTypes.string,
-  station: PropTypes.string
+  station: PropTypes.string,
+  subject: PropTypes.string,
+  description: PropTypes.string
 };
 
 const mapStateToProps = state => {
