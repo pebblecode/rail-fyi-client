@@ -12,16 +12,16 @@ const subjects = [
       icon: 'icon-dirty',
       message: {
         pre: 'were',
-        main: 'grim',
-        post: '!'
+        main: 'grim!',
+        post: ''
       }
     }, {
       name: 'No toilet paper',
       icon: 'icon-no-tp',
       message: {
         pre: 'had no',
-        main: 'bloomin\' toilet paper',
-        post: '!'
+        main: 'blooming toilet paper!',
+        post: ''
       }
     }, {
       name: 'Blocked',
@@ -44,8 +44,8 @@ const subjects = [
       icon: 'icon-clean',
       message: {
         pre: 'were',
-        main: 'spotless',
-        post: '!'
+        main: 'spotless!',
+        post: ''
       }
     }]
   },
@@ -62,24 +62,24 @@ const subjects = [
       icon: 'icon-litter',
       message: {
         pre: 'abysmall -',
-        main: 'litter everywhere',
-        post: '!'
+        main: 'litter everywhere!',
+        post: ''
       }
     }, {
       name: 'Dirty',
       icon: 'icon-dirty',
       message: {
         pre: 'abysmall - it\'s',
-        main: 'super dirty',
-        post: '!'
+        main: 'super dirty!',
+        post: ''
       }
     }, {
       name: 'Super clean',
       icon: 'icon-clean',
       message: {
         pre: '',
-        main: 'top notch',
-        post: '!'
+        main: 'top notch!',
+        post: ''
       }
     }]
   },
@@ -96,16 +96,16 @@ const subjects = [
       icon: 'icon-unfriendly',
       message: {
         pre: 'so',
-        main: 'rude',
-        post: '!'
+        main: 'rude!',
+        post: ''
       }
     },{
       name: 'Friendly',
       icon: 'icon-friendly',
       message: {
         pre: '',
-        main: 'awesome',
-        post: '!'
+        main: 'awesome!',
+        post: ''
       }
     }, {
       name: 'Aggressive',
@@ -113,15 +113,15 @@ const subjects = [
       message: {
         pre: '',
         main: 'aggressive',
-        post: '.'
+        post: ''
       }
     }, {
       name: 'Uninformative',
       icon: 'icon-uninformative',
       message: {
         pre: '',
-        main: 'bloomin\' clueless',
-        post: '!'
+        main: 'blooming clueless!',
+        post: ''
       }
     }]
   },
@@ -138,8 +138,8 @@ const subjects = [
       icon: 'icon-crowded',
       message: {
         pre: '',
-        main: 'humongous',
-        post: '!'
+        main: 'humongous!',
+        post: ''
       }
     }, {
       name: 'No one\'s here',
@@ -164,8 +164,8 @@ const subjects = [
       icon: 'icon-temp-hot',
       message: {
         pre: '',
-        main: 'absolutely baking',
-        post: '!'
+        main: 'absolutely baking!',
+        post: ''
       }
     }, {
       name: 'Too cold',
