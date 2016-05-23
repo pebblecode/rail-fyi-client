@@ -32,9 +32,17 @@
   }
 }
 
+.icon-chevron {
+  background-image: url("../images/icon-small-chevron.svg");
+  transition: background-position-y .25s ease-in-out;
+
+  .disabled & {
+    background-position-y: 40px;
+  }
+}
+
 .icon-agressive { background-image: url("../images/icon-small-agressive.svg"); }
 .icon-broken { background-image: url("../images/icon-small-broken.svg"); }
-.icon-chevron { background-image: url("../images/icon-small-chevron.svg"); }
 .icon-clean { background-image: url("../images/icon-small-clean.svg"); }
 .icon-crowd-empty { background-image: url("../images/icon-small-crowd-empty.svg"); }
 .icon-crowd-ok { background-image: url("../images/icon-small-crowd-ok.svg"); }
