@@ -16,12 +16,6 @@ button, .btn {
     background-image: linear-gradient(transparent calc(100% - 3px), $r-fyi-blue calc(100% - 3px));
   }
 
-  .disabled & {
-    color: tint($r-fyi-ink, 40);
-    background-image: linear-gradient(transparent calc(100% - 3px), tint($r-fyi-ink, 40) calc(100% - 3px));
-    pointer-events: none;
-  }
-
   &:hover {
     color: $r-fyi-blue-hover;
 
@@ -77,6 +71,17 @@ button, .btn {
     &:not(.send-btn) {
       background-image: linear-gradient(transparent calc(100% - 3px), $r-fyi-blue-hover calc(100% - 3px));
     }
+  }
+}
+
+.disabled .btn-group-item {
+  pointer-events: none;
+
+  .btn,
+  button {
+    color: tint($r-fyi-ink, 40);
+    background-image: linear-gradient(transparent calc(100% - 3px), tint($r-fyi-ink, 40) calc(100% - 3px));
+    cursor: default;
   }
 }
 
