@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(function(req, res, next) {
-  console.log('HEY HO');
+  console.log('HEY');
   if (req.secure) {
     console.log('ALREADY SECURE');
     next();
