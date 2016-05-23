@@ -4,6 +4,12 @@ import React, { PropTypes, Component } from 'react';
 
 class ProgressBar extends Component {
   render() {
+    if (!this.props.stage) {
+      return (
+        <div>
+        </div>
+      );
+    }
     return (
       <div className="progress-bar-container">
         <ul className={"progress-bar-list progress-" + this.props.stage}>

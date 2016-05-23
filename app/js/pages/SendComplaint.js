@@ -4,7 +4,7 @@ import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
-import ProgressBar from '../components/ProgressBar';
+import { setStage } from '../actions/stage';
 import InProgressMessage from '../components/InProgressMessage';
 import SendButtons from '../components/SendButtons';
 import stationList from '../data/station-list';
@@ -12,6 +12,10 @@ import config from '../config';
 import message from '../lib/message';
 
 class SendComplaint extends Component {
+  constructor(props) {
+    super(props);
+    props.dispatch(setStage(4));
+  }
   _buildMessage() {
     const { station, subject, description } = this.props;
 
@@ -47,7 +51,6 @@ class SendComplaint extends Component {
 
     return (
       <section className="select-complaint">
-        <ProgressBar stage={4} />
         <p>Here is your message.</p>
         <InProgressMessage />
         <div className="bottom-container">

@@ -5,12 +5,16 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
 import config from '../config';
+import { setStage } from '../actions/stage';
 import DescriptionForm from '../containers/DescriptionForm';
-import ProgressBar from '../components/ProgressBar';
 import InProgressMessage from '../components/InProgressMessage';
 import StationOperator from '../components/StationOperator';
 
 class SelectDescription extends Component {
+  constructor(props) {
+    super(props);
+    props.dispatch(setStage(3));
+  }
   _findDescriptions() {
     const { category } = this.props;
     const options = config.subjects;
@@ -31,7 +35,6 @@ class SelectDescription extends Component {
 
     return (
       <section className="select-description">
-        <ProgressBar stage={3} />
         <StationOperator />
         <InProgressMessage />
         <div className="bottom-container">
