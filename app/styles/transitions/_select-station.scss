@@ -1,17 +1,8 @@
-.selectStationDescription-enter {
+.selectStationDescription-appear {
   opacity: 0.01;
 }
 
-.selectStationDescription-enter.selectStationDescription-enter-active {
+.selectStationDescription-appear.selectStationDescription-appear-active {
   opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.selectStationDescription-leave {
-  opacity: 1;
-}
-
-.selectStationDescription-leave.selectStationDescription-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+  transition: opacity .5s ease-in;
 }
