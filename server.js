@@ -2,12 +2,15 @@ var express = require('express');
 var path = require('path');
 var fs = require('fs');
 var forceSSL = require('express-force-ssl');
+var http = require('http');
+var https = require('https');
 
 var ssl_options = {
-  key: fs.readFileSync('./keys/private.key'),
-  cert: fs.readFileSync('./keys/cert.crt'),
+  key: fs.readFileSync('./keys/certificate.key'),
+  cert: fs.readFileSync('./keys/certificate.pem'),
 };
 
+var app = express();
 var server = http.createServer(app);
 var secureServer = https.createServer(ssl_options, app);
 
@@ -42,5 +45,5 @@ app.use('*', function(req, res) {
   res.sendFile('./build/index.html', {root: __dirname});
 });
 
-secureServer.listen(443);
-server.listen(80);
+secureServer.listen(4432);
+server.listen(process.env.PORT || 3000);
