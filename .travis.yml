@@ -3,7 +3,7 @@ node_js:
 - 4.2.2
 before_install:
 - npm i -g npm@^3.0.0
-script: gulp prod
+script: NODE_ENV=production gulp prod
 deploy:
   provider: heroku
   strategy: api

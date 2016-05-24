@@ -1,7 +1,6 @@
 'use strict';
 
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
@@ -19,9 +18,7 @@ class SelectStation extends Component {
     return (
       <section className="select-station">
         <div className="bottom-container">
-          <ReactCSSTransitionGroup transitionName="selectStationDescription" transitionAppear={true} transitionAppearTimeout={500}>
-            <p>Which station would you like to give us feedback on?</p>
-          </ReactCSSTransitionGroup>
+          <p>Which station would you like to give us feedback on?</p>
           <StationForm {...this.props} />
         </div>
       </section>
