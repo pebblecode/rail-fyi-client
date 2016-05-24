@@ -1084,8 +1084,6 @@ button:hover, .btn:hover {
     transition: opacity .3s ease-in-out;
 
     opacity: 0;
-
-    position: absolute;
 }
 
 .pageTransition-enter.pageTransition-enter-active {
@@ -1094,15 +1092,6 @@ button:hover, .btn:hover {
 }
 
 .pageTransition-leave {
-
-    -webkit-transition: opacity .3s ease-in-out;
-
-    transition: opacity .3s ease-in-out;
-
-    opacity: 1;
-}
-
-.pageTransition-leave.pageTransition-leave-active {
 
     opacity: 0;
 }
