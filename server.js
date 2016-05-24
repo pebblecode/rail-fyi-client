@@ -7,6 +7,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(function(req, res, next) {
   console.log('HEY');
+  console.log(req);
   if (req.secure) {
     console.log('ALREADY SECURE');
     next();
