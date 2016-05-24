@@ -14,7 +14,7 @@ class NotFoundPage extends Component {
 
   render() {
     return (
-      <section className="not-found-page">
+      <section className="not-found">
         Page Not Found
       </section>
     );

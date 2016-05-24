@@ -1,0 +1,62 @@
+.progress-bar-container {
+  margin: 20px 40px;
+}
+
+.progress-bar-list {
+
+  position: relative
+}
+
+.progress-bar-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.progress-bar-list:before {
+  content: "";
+  position: absolute;
+  width: 98%;
+  background-color: $r-fyi-blue;
+  height: 1px;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.progress-bar-dot {
+
+  border-radius: 50%;
+  border: 1px solid $r-fyi-blue;
+  background-color: $paper;
+  width: 21px;
+  height: 21px;
+  float: left;
+  position: relative
+}
+
+.progress-bar-dot:not(:first-child) {
+  margin-left: calc(33.3333% - 28px);
+}
+
+.progress-bar-dot:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: $r-fyi-blue;
+  width: 21px - 3px * 2;
+  height: 21px - 3px * 2;
+  top: 50%;
+  left: 50%;
+  margin: 21px / -2 + 3px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+}
+
+.progress-1 .progress-bar-dot:nth-child(1):before { -webkit-transform: scale(1); transform: scale(1); }
+.progress-2 .progress-bar-dot:nth-child(2):before { -webkit-transform: scale(1); transform: scale(1); }
+.progress-3 .progress-bar-dot:nth-child(3):before { -webkit-transform: scale(1); transform: scale(1); }
+.progress-4 .progress-bar-dot:nth-child(4):before { -webkit-transform: scale(1); transform: scale(1); }

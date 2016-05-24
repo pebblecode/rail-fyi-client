@@ -1,0 +1,12 @@
+$paper: white;
+
+/* Colours */
+$r-fyi-blue: #1168F3;
+$r-fyi-blue-hover: color($r-fyi-blue shade(50%));
+$r-fyi-ink: #151A29;
+
+/* Type Sizes */
+$fs-small: 14px;
+$fs-medium: 20px;
+$fs-large: 24px;
+$fs-extra-large: 30px;

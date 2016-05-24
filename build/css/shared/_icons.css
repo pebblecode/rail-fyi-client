@@ -1,0 +1,61 @@
+.icon-small, .icon-large {
+  display: inline-block;
+}
+
+.icon-small {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-large {
+  width: 120px;
+}
+
+.icon-train {
+  height: 120px;
+  background-image: url("../images/icon-large-train-ani.svg");
+}
+
+.icon-location {
+  height: 140px;
+  background-image: url("../images/icon-large-location.svg");
+  position: fixed;
+  top: 140px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%)
+}
+
+.icon-location.loading {
+  background-image: url("../images/icon-large-location-ani.svg");
+}
+
+.icon-chevron {
+  background-image: url("../images/icon-small-chevron.svg");
+  -webkit-transition: background-position-y .25s ease-in-out;
+  transition: background-position-y .25s ease-in-out;
+}
+
+.disabled .icon-chevron {
+  background-position-y: 40px;
+}
+
+.icon-agressive { background-image: url("../images/icon-small-agressive.svg"); }
+.icon-broken { background-image: url("../images/icon-small-broken.svg"); }
+.icon-clean { background-image: url("../images/icon-small-clean.svg"); }
+.icon-crowd-empty { background-image: url("../images/icon-small-crowd-empty.svg"); }
+.icon-crowd-ok { background-image: url("../images/icon-small-crowd-ok.svg"); }
+.icon-crowded { background-image: url("../images/icon-small-crowded.svg"); }
+.icon-dirty { background-image: url("../images/icon-small-dirty.svg"); }
+.icon-friendly { background-image: url("../images/icon-small-friendly.svg"); }
+.icon-litter { background-image: url("../images/icon-small-litter.svg"); }
+.icon-no-tp { background-image: url("../images/icon-small-no-tp.svg"); }
+.icon-search-2 { background-image: url("../images/icon-small-search-2.svg"); }
+.icon-search { background-image: url("../images/icon-small-search.svg"); }
+.icon-staff { background-image: url("../images/icon-small-staff.svg"); }
+.icon-temp-cold { background-image: url("../images/icon-small-temp-cold.svg"); }
+.icon-temp-hot { background-image: url("../images/icon-small-temp-hot.svg"); }
+.icon-temp { background-image: url("../images/icon-small-temp.svg"); }
+.icon-toilet { background-image: url("../images/icon-small-toilet.svg"); }
+.icon-unfriendly { background-image: url("../images/icon-small-unfriendly.svg"); }
+.icon-uninformative { background-image: url("../images/icon-small-uninformative.svg"); }

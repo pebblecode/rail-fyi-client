@@ -1,0 +1,111 @@
+button, .btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: 0;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: color .25s ease-in-out, border .25s ease-in-out;
+  transition: color .25s ease-in-out, border .25s ease-in-out
+}
+
+button:not(.send-btn), .btn:not(.send-btn) {
+  font-size: $fs-medium;
+  padding-bottom: 1px;
+  background-image: -webkit-linear-gradient(transparent calc(100% - 3px), $r-fyi-blue calc(100% - 3px));
+  background-image: linear-gradient(transparent calc(100% - 3px), $r-fyi-blue calc(100% - 3px))
+}
+
+button:hover, .btn:hover {
+  color: $r-fyi-blue-hover
+}
+
+button:hover:not(.send-btn), .btn:hover:not(.send-btn) {
+  background-image: -webkit-linear-gradient(transparent calc(100% - 3px), $r-fyi-blue-hover calc(100% - 3px));
+  background-image: linear-gradient(transparent calc(100% - 3px), $r-fyi-blue-hover calc(100% - 3px))
+}
+
+.btn-group-container {
+
+}
+
+.btn-group-list {
+
+}
+
+.btn-group-item {
+
+  border-top: 1px solid $r-fyi-blue;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.btn-group-item .btn {
+  padding-top: 16px;
+}
+
+.btn-group-item .icon-small {
+  margin: 10px 0;
+}
+
+.btn-group-item .icon-small:first-child {
+  float: left;
+  margin-right: 10px;
+}
+
+.btn-group-item .icon-small:last-child {
+  float: right;
+}
+
+.btn-group-item:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.btn-group-item:hover .btn {
+  color: $r-fyi-blue-hover
+}
+
+.btn-group-item:hover .btn:not(.send-btn) {
+  background-image: -webkit-linear-gradient(transparent calc(100% - 3px), $r-fyi-blue-hover calc(100% - 3px));
+  background-image: linear-gradient(transparent calc(100% - 3px), $r-fyi-blue-hover calc(100% - 3px))
+}
+
+.disabled .btn-group-item {
+  pointer-events: none;
+}
+
+.disabled .btn-group-item .btn, .disabled .btn-group-item button {
+  color: tint($r-fyi-ink, 40);
+  background-image: -webkit-linear-gradient(transparent calc(100% - 3px), tint($r-fyi-ink, 40) calc(100% - 3px));
+  background-image: linear-gradient(transparent calc(100% - 3px), tint($r-fyi-ink, 40) calc(100% - 3px));
+  cursor: default;
+}
+
+.send-buttons-container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.send-btn {
+  font-size: $fs-large;
+  border: 3px solid $r-fyi-blue;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 12px;
+  -webkit-transition: color .25s ease-in-out, border-color .25s ease-in-out;
+  transition: color .25s ease-in-out, border-color .25s ease-in-out
+}
+
+.send-btn:first-child {
+  margin-bottom: 18px
+}
+
+.send-btn:hover {
+  border: 3px solid $r-fyi-blue-hover
+}

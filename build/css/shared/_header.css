@@ -1,0 +1,10 @@
+.app-header-container {
+  border-bottom: 1px solid $r-fyi-blue;
+}
+
+.app-header-logo {
+  font-size: $fs-extra-large;
+  margin: 0;
+  text-align: center;
+  padding: 12px 0 14px;
+}

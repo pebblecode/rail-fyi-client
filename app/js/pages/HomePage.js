@@ -16,7 +16,7 @@ class HomePage extends Component {
 
   render() {
     return (
-      <section className="home-page">
+      <section className="home">
         <div className="center-dis">
           <span className="icon-large icon-train"></span>
           <h1>Hello and Welcome</h1>

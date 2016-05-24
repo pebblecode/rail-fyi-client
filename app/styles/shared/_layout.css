@@ -1,0 +1,38 @@
+$small-break: 500px;
+
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.center-dis {
+  text-align: center;
+}
+
+.app-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: $small-break;
+}
+
+.bottom-container {
+  max-width: $small-break;
+
+  @media screen and ( max-width: $small-break) {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  @media screen and ( min-width: $small-break) {
+    margin-top: 60px;
+  }
+}
