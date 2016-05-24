@@ -1,5 +1,9 @@
 .progress-bar-container {
   margin: 20px 40px;
+
+  @media screen and ( min-width: $bpoint-large) {
+    padding-left: 400px;
+  }
 }
 
 .progress-bar-list {

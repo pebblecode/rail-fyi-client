@@ -1,12 +1,10 @@
 .select-complaint {
-  @media screen and ( min-width: $bpoint-medium) {
-    .btn-large {
-      display: inline-block;
-      width: calc(50% - 10px);
-
-      &:first-child {
-        margin-right: 20px;
-      }
+  @media screen and ( min-width: $bpoint-large) {
+    .btn-group-item {
+      width: 400px;
+      position: absolute;
+      bottom: 0;
+      padding: 0 20px;
     }
   }
 }

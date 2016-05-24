@@ -496,30 +496,6 @@ ul {
 
     text-align: center;
 }
-
-.app-container {
-
-    width: 100%;
-
-    margin: 0 auto;
-}
-
-.bottom-container {
-
-    width: 100%;
-
-    margin-top: 20px;
-}
-
-@media screen and ( max-width: 500px) {
-
-    .bottom-container {
-
-        position: fixed;
-
-        bottom: 0;
-    }
-}
 html {
 
     font-size: 100%;
@@ -634,53 +610,6 @@ button:hover, .btn:hover {
     padding: 10px 20px 14px;
 
     margin: 20px 0;
-}
-
-/* Button Lists */
-
-.btn-group-list .btn-group-item {}
-
-.btn-group-list .btn-group-item:hover .btn {
-
-    color: rgb(9, 52, 122);
-}
-
-.btn-group-list.disabled .btn-group-item {
-
-    pointer-events: none;
-}
-
-.btn-group-list.disabled .btn-group-item button, .btn-group-list.disabled .btn-group-item .btn {
-
-    color: rgb(115, 118, 127);
-
-    cursor: default;
-}
-
-.btn-group-item {
-
-    border-top: 1px solid #1168F3;
-
-    padding: 20px 50px 20px 20px;
-
-    cursor: pointer;
-}
-
-.btn-group-item .icon-small {
-
-    vertical-align: middle;
-}
-
-.btn-group-item .icon-small:first-child {
-
-    margin-right: 10px;
-}
-
-.btn-group-item .icon-small:last-child {
-
-    position: absolute;
-
-    right: 10px;
 }
 .icon-small, .icon-large {
 
@@ -814,6 +743,13 @@ button:hover, .btn:hover {
 
     margin: 20px 40px;
 }
+@media screen and ( min-width: 1024px) {
+
+    .progress-bar-container {
+
+        padding-left: 400px;
+    }
+}
 .progress-bar-list {
 
     position: relative;
@@ -945,14 +881,133 @@ button:hover, .btn:hover {
     padding: 12px 0 14px;
 }
 
+.app-container {
+
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.content-container {}
+
+@media screen and ( min-width: 1024px) {
+
+    .content-container {
+
+        padding: 10px 20px 10px 420px;
+    }
+}
+
+.bottom-container {
+
+    width: 100%;
+
+    margin-top: 20px;
+}
+
+@media screen and ( min-width: 1024px) {
+
+    .bottom-container {
+
+        height: calc(100% - 85px);
+
+        width: 400px;
+
+        position: absolute;
+
+        top: 65px;
+
+        left: 0;
+
+        border-right: 1px solid #1168F3;
+    }
+}
+
+@media screen and ( max-width: 500px) {
+
+    .bottom-container {
+
+        position: fixed;
+
+        bottom: 0;
+    }
+}
+
+/* Button Lists */
+
+.btn-group-list .btn-group-item {}
+
+.btn-group-list .btn-group-item:hover .btn {
+
+    color: rgb(9, 52, 122);
+}
+
+@media screen and ( min-width: 1024px) {
+
+    .btn-group-list {
+
+        width: 400px;
+
+        position: absolute;
+
+        bottom: 0;
+    }
+}
+
+.btn-group-list.disabled .btn-group-item {
+
+    pointer-events: none;
+}
+
+.btn-group-list.disabled .btn-group-item button, .btn-group-list.disabled .btn-group-item .btn {
+
+    color: rgb(115, 118, 127);
+
+    cursor: default;
+}
+
+.btn-group-item {
+
+    border-top: 1px solid #1168F3;
+
+    padding: 10px 50px 10px 20px;
+
+    cursor: pointer;
+}
+
+.btn-group-item .icon-small {
+
+    vertical-align: middle;
+}
+
+.btn-group-item .icon-small:first-child {
+
+    margin-right: 10px;
+}
+
+.btn-group-item .icon-small:last-child {
+
+    position: absolute;
+
+    right: 10px;
+}
+
+@media screen and ( min-width: 768px) {
+
+    .btn-group-item {
+
+        padding: 20px 50px 20px 20px;
+    }
+}
 .home {
+
+    text-align: center;
 
     margin: 40px auto 0;
 
     max-width: 1024px;
 }
-
-.home .bottom-container {
+.home .btn {
 
     margin: 60px auto 40px;
 }
@@ -960,17 +1015,21 @@ button:hover, .btn:hover {
 
     padding-top: 160px;
 }
-.select-station .icon-location {
+.select-station .icon-location {}
+@media screen and ( max-width: 1024px) {
 
-    position: absolute;
+    .select-station .icon-location {
 
-    top: 140px;
+        position: absolute;
 
-    left: 50%;
+        top: 140px;
 
-    -webkit-transform: translateX(-50%);
+        left: 50%;
 
-            transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+
+                transform: translateX(-50%);
+    }
 }
 @media screen and ( max-width: 500px) {
 
@@ -980,17 +1039,16 @@ button:hover, .btn:hover {
     }
 }
 .select-complaint {}
-@media screen and ( min-width: 768px) {
+@media screen and ( min-width: 1024px) {
 
-    .select-complaint .btn-large {
+    .select-complaint .btn-group-item {
 
-        display: inline-block;
+        width: 400px;
 
-        width: calc(50% - 10px);
-    }
+        position: absolute;
 
-    .select-complaint .btn-large:first-child {
+        bottom: 0;
 
-        margin-right: 20px;
+        padding: 0 20px;
     }
 }

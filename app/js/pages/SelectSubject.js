@@ -26,8 +26,10 @@ class SelectSubject extends Component {
 
     return (
       <section className="select-category">
-        <StationOperator />
-        <InProgressMessage />
+        <div className="content-container">
+          <StationOperator />
+          <InProgressMessage />
+        </div>
         <div className="bottom-container">
           <p>Please select the relevant subject you would like to give feedback on</p>
           <SubjectForm {...this.props} options={options}/>

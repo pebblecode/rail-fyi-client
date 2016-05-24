@@ -17,21 +17,3 @@ ul {
 .center {
   text-align: center;
 }
-
-.app-container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.bottom-container {
-  width: 100%;
-  margin-top: 20px
-}
-
-@media screen and ( max-width: $bpoint-small) {
-
-  .bottom-container {
-    position: fixed;
-    bottom: 0;
-  }
-  }

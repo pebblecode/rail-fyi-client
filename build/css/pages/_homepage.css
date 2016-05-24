@@ -1,7 +1,8 @@
 .home {
+  text-align: center;
   margin: 40px auto 0;
   max-width: $max-width;
 }
-.home .bottom-container {
+.home .btn {
   margin: 60px auto 40px;
 }

@@ -43,37 +43,3 @@ button:hover, .btn:hover {
   padding: 10px 20px 14px;
   margin: 20px 0;
 }
-
-/* Button Lists */
-.btn-group-list .btn-group-item {}
-.btn-group-list .btn-group-item:hover .btn {
-  color: $brand-primary-dark
-}
-
-.btn-group-list.disabled .btn-group-item {
-  pointer-events: none;
-}
-
-.btn-group-list.disabled .btn-group-item button, .btn-group-list.disabled .btn-group-item .btn {
-  color: rgb(115, 118, 127);
-  cursor: default;
-}
-
-.btn-group-item {
-  border-top: 1px solid $brand-primary;
-  padding: 20px 50px 20px 20px;
-  cursor: pointer;
-}
-
-.btn-group-item .icon-small {
-  vertical-align: middle
-}
-
-.btn-group-item .icon-small:first-child {
-  margin-right: 10px
-}
-
-.btn-group-item .icon-small:last-child {
-  position: absolute;
-  right: 10px
-}

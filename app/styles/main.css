@@ -12,6 +12,7 @@
 @import "./shared/message";
 @import "./shared/header";
 
+@import "./pages/base";
 @import "./pages/homepage";
 @import "./pages/select-station";
 @import "./pages/send-complaint";

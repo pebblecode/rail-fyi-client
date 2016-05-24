@@ -51,8 +51,10 @@ class SendComplaint extends Component {
 
     return (
       <section className="select-complaint">
-        <p>Here is your message.</p>
-        <InProgressMessage />
+        <div className="content-container">
+          <p>Here is your message.</p>
+          <InProgressMessage />
+        </div>
         <div className="bottom-container">
           <p>Ready? Choose your weapon</p>
           <SendButtons tweetEndpoint={tweetEndpoint} emailEndpoint={emailEndpoint} />

@@ -1,6 +1,13 @@
 .progress-bar-container {
-  margin: 20px 40px;
+  margin: 20px 40px
 }
+
+  @media screen and ( min-width: $bpoint-large) {
+
+  .progress-bar-container {
+    padding-left: 400px
+  }
+  }
 
 .progress-bar-list {
 
@@ -10,7 +17,7 @@
 .progress-bar-list:after {
   content: "";
   display: table;
-  clear: both;
+  clear: both
 }
 
 .progress-bar-list:before {
@@ -20,7 +27,7 @@
   background-color: $brand-primary;
   height: 1px;
   top: 50%;
-  margin-top: -1px;
+  margin-top: -1px
 }
 
 .progress-bar-dot {
@@ -35,7 +42,7 @@
 }
 
 .progress-bar-dot:not(:first-child) {
-  margin-left: calc(33.3333% - 28px);
+  margin-left: calc(33.3333% - 28px)
 }
 
 .progress-bar-dot:before {
@@ -53,7 +60,7 @@
   -webkit-transition: -webkit-transform .25s;
   transition: -webkit-transform .25s;
   transition: transform .25s;
-  transition: transform .25s, -webkit-transform .25s;
+  transition: transform .25s, -webkit-transform .25s
 }
 
 .progress-1 .progress-bar-dot:nth-child(1):before { -webkit-transform: scale(1); transform: scale(1); }
