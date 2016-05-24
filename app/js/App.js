@@ -2,6 +2,7 @@
 
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import Header from './components/Header';
 import ProgressBar from './components/ProgressBar';
@@ -25,16 +26,20 @@ class App extends Component {
     console.log('About to mount App');
   }
 
-  renderChildren() {
-    return React.cloneElement(this.props.children, ...this.props);
-  }
-
   render() {
     return (
       <div className="app-container">
         <Header />
         <ProgressBar stage={this.props.page} />
-        { this.renderChildren() }
+        <ReactCSSTransitionGroup component='div' transitionName="pageTransition"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+          {
+            React.cloneElement(this.props.children, {
+              key: this.props.location.pathname
+            })
+          }
+        </ReactCSSTransitionGroup>
       </div>
     );
   }

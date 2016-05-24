@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-small-uninformative</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icon-small-uninformative" stroke="#1168F4" stroke-width="2">
-            <path d="M20,5 C11.7286521,5 5,11.7283844 5,19.9994032 C5,28.2704219 11.7286521,35 20,35 C28.2713479,35 35,28.2704219 35,19.9994032 C35,11.7283844 28.2713479,5 20,5 L20,5 Z" id="Shape"></path>
-            <circle id="Oval" cx="15.1666667" cy="16.1666667" r="2.16666667"></circle>
-            <circle id="Oval" cx="25.1666667" cy="16.1666667" r="2.16666667"></circle>
-            <path d="M14,27 C14,27 14.6586334,24 17,24 C19.3413666,24 20.8413666,27 23,27 C25.1586334,27 26,24 26,24" id="Path-141"></path>
-        </g>
-    </g>
-</svg>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><title>icon-small-uninformative</title><g stroke="#1168F4" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M20 5C11.729 5 5 11.728 5 20c0 8.27 6.729 15 15 15s15-6.73 15-15c0-8.272-6.729-15-15-15z"/><circle cx="15.167" cy="16.167" r="2.167"/><circle cx="25.167" cy="16.167" r="2.167"/><path d="M14 27s.659-3 3-3 3.841 3 6 3 3-3 3-3"/></g></svg>

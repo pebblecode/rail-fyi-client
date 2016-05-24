@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-small-broken</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
-        <g id="icon-small-broken" stroke="#1168F4" stroke-width="2">
-            <g id="Group" transform="translate(6.000000, 5.000000)">
-                <polygon id="Path-155" points="12.6451613 2.70967742 17.1612903 1.80645161 17.1612903 14.4516129"></polygon>
-                <path d="M28,0 L20.7741935,7.22580645 L20.7741935,14.4516129 L27.0967742,12.6451613 L22.5806452,28.9032258 L20.7741935,23.483871 L14.4516129,25.2903226 L14.4516129,22.5806452 L7.22580645,23.483871 L0,29.8064516" id="Path-159"></path>
-                <polygon id="Path-156" points="6.32258065 0.903225806 5.41935484 4.51612903 10.8387097 7.22580645"></polygon>
-                <polygon id="Path-158" points="1.80645161 11.7419355 12.6451613 14.4516129 9.03225806 9.03225806"></polygon>
-                <polygon id="Path-157" transform="translate(9.462268, 19.854621) rotate(20.000000) translate(-9.462268, -19.854621) " points="4.49452623 18.9513948 15.3332359 16.2417174 3.59130042 23.4675239"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><title>icon-small-broken</title><g stroke="#1168F4" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linejoin="round"><path d="M18.645 7.71l4.516-.904v12.646z"/><path d="M34 5l-7.226 7.226v7.226l6.323-1.807-4.516 16.258-1.807-5.42-6.322 1.807v-2.71l-7.226.904L6 34.806M12.323 5.903l-.904 3.613 5.42 2.71zM7.806 16.742l10.84 2.71-3.614-5.42z"/><path d="M11.103 22.307l11.112 1.16L8.71 26.243z"/></g></svg>

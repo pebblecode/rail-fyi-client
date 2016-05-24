@@ -21,6 +21,7 @@ app.get('*', function(req, res, next) {
 });
 
 app.use('*', function(req, res) {
+  console.log('dirname is' + __dirname);
   res.sendFile('./build/index.html', {root: __dirname});
 });
 
