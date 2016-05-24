@@ -23,7 +23,7 @@
 .progress-bar-list:before {
   content: "";
   position: absolute;
-  width: 98%;
+  width: 100%;
   background-color: $brand-primary;
   height: 1px;
   top: 50%;

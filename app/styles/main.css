@@ -16,8 +16,5 @@
 @import "./pages/home";
 @import "./pages/select-station";
 @import "./pages/send-complaint";
-<<<<<<< HEAD:app/styles/main.css
-=======
 
-@import "./transitions/page-transition.scss";
->>>>>>> master:app/styles/main.scss
+@import "./transitions/page-transition";
