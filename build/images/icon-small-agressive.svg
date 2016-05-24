@@ -1,1 +1,25 @@
-<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>icon-small-agressive</title><defs><rect id="a" x="7" y="17" width="16" height="8" rx="3"/><mask id="b" x="0" y="0" width="16" height="8" fill="#fff"><use xlink:href="#a"/></mask></defs><g transform="translate(5 5)" stroke="#1168F4" fill="none" fill-rule="evenodd"><path d="M15 0C6.729 0 0 6.728 0 15c0 8.27 6.729 15 15 15s15-6.73 15-15c0-8.272-6.729-15-15-15z" stroke-width="2"/><circle stroke-width="2" cx="9.973" cy="11.301" r="2.167"/><circle stroke-width="2" cx="20.183" cy="11.301" r="2.167"/><use mask="url(#b)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xlink:href="#a"/><path d="M11 17.868V22M18.333 17.868V22M14.667 17.868V22" stroke-width="2" stroke-linecap="square"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-small-agressive</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="7" y="17" width="16" height="8" rx="3"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="16" height="8" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-small-agressive" stroke="#1168F4">
+            <g id="Group-9" transform="translate(5.000000, 5.000000)">
+                <path d="M15,-3.55271368e-15 C6.72865215,-3.55271368e-15 5.32907052e-15,6.72838442 5.32907052e-15,14.9994032 C5.32907052e-15,23.2704219 6.72865215,30 15,30 C23.2713479,30 30,23.2704219 30,14.9994032 C30,6.72838442 23.2713479,-3.55271368e-15 15,-3.55271368e-15 L15,-3.55271368e-15 Z" id="Shape" stroke-width="2"></path>
+                <circle id="Oval" stroke-width="2" cx="9.97346667" cy="11.3009333" r="2.16666667"></circle>
+                <circle id="Oval" stroke-width="2" cx="20.1830667" cy="11.3009333" r="2.16666667"></circle>
+                <use id="Rectangle-14" mask="url(#mask-2)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-1"></use>
+                <path d="M11,17.8678372 L11,22" id="Line" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M18.3333333,17.8678372 L18.3333333,22" id="Line" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M14.6666667,17.8678372 L14.6666667,22" id="Line" stroke-width="2" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
