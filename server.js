@@ -12,8 +12,8 @@ app.use('*', function(req, res, next) {
     console.log('ALREADY SECURE');
     next();
   } else {
-    console.log(res.headers, req.url);
-    var https = 'https://' + res.headers.host + req.url;
+    console.log(req.headers, req.url);
+    var https = 'https://' + req.headers.host + req.url;
     console.log('REDIRECTING TO HTTPS', https);
     res.redirect(https);
   }
