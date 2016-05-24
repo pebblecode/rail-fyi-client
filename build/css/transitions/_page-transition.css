@@ -1,16 +1,11 @@
 .pageTransition-enter {
+  -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
   opacity: 0;
-  position: absolute;
 }
 .pageTransition-enter.pageTransition-enter-active {
   opacity: 1;
 }
 .pageTransition-leave {
-  transition: opacity .3s ease-in-out;
-  opacity: 1;
-
-}
-.pageTransition-leave.pageTransition-leave-active {
   opacity: 0;
 }
