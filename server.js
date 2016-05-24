@@ -5,22 +5,18 @@ var app = express();
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.use('*', function(req, res, next) {
+app.use('*', function(req, res) {
   console.log('HEY');
   console.log(req.secure);
   if (req.secure) {
     console.log('ALREADY SECURE');
-    next();
+    res.sendFile('./build/index.html', {root: __dirname});
   } else {
     console.log(req.headers, req.url);
     var https = 'https://' + req.headers.host + req.url;
     console.log('REDIRECTING TO HTTPS', https);
     res.redirect(https);
   }
-});
-
-app.use('*', function(req, res) {
-  res.sendFile('./build/index.html', {root: __dirname});
 });
 
 app.listen(process.env.PORT || 3000, function () {
