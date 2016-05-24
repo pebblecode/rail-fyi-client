@@ -963,13 +963,17 @@ button:hover, .btn:hover {
 
 .btn-group-item {
 
+    position: relative;
+
+    min-height: 60px;
+
     -webkit-transition: .25s;
 
     transition: .25s;
 
     border-top: 1px solid #1168F3;
 
-    padding: 10px 50px 10px 20px;
+    padding: 10px 20px;
 
     cursor: pointer;
 }
@@ -988,10 +992,16 @@ button:hover, .btn:hover {
 
     position: absolute;
 
+    top: 50%;
+
     right: 10px;
+
+    -webkit-transform: translateY(-50%);
+
+            transform: translateY(-50%);
 }
 
-@media screen and ( min-width: 768px) {
+@media screen and ( min-width: 1024px) {
 
     .btn-group-item {
 
@@ -1035,6 +1045,11 @@ button:hover, .btn:hover {
         -webkit-transform: translateX(-50%);
 
                 transform: translateX(-50%);
+    }
+
+    .select-station .icon-location .btn-group-item {
+
+        padding-top: 15px;
     }
 }
 @media screen and ( max-width: 500px) {

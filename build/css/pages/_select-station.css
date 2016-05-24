@@ -10,6 +10,9 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+  .select-station .icon-location .btn-group-item {
+    padding-top: 15px;
+  }
     }
     @media screen and ( max-width: $bpoint-small) {
   .select-station .icon-location {
