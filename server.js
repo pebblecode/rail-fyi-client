@@ -14,11 +14,10 @@ var app = express();
 var server = http.createServer(app);
 var secureServer = https.createServer(ssl_options, app);
 
-
 app.set('forceSSLOptions', {
   enable301Redirects: true,
   trustXFPHeader: false,
-  httpsPort: 443,
+  httpsPort: 4432,
   sslRequiredMessage: 'SSL Required.'
 });
 
