@@ -1044,7 +1044,10 @@ button:hover, .btn:hover {
         position: fixed;
     }
 }
-.select-complaint {}
+.select-complaint .btn-group-item:hover {
+
+    background-color: transparent;
+}
 @media screen and ( min-width: 1024px) {
 
     .select-complaint .btn-group-item {
