@@ -54,9 +54,7 @@ class SendComplaint extends Component {
         <p>Here is your message.</p>
         <InProgressMessage />
         <div className="bottom-container">
-          <div className="center-dis">
-            <p>Ready? Choose your weapon</p>
-          </div>
+          <p>Ready? Choose your weapon</p>
           <SendButtons tweetEndpoint={tweetEndpoint} emailEndpoint={emailEndpoint} />
         </div>
       </section>

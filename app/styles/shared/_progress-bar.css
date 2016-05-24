@@ -11,7 +11,7 @@
     content: "";
     position: absolute;
     width: 98%;
-    background-color: $r-fyi-blue;
+    background-color: $brand-primary;
     height: 1px;
     top: 50%;
     margin-top: -1px;
@@ -23,7 +23,7 @@
   $dot-offset: 3px;
 
   border-radius: 50%;
-  border: 1px solid $r-fyi-blue;
+  border: 1px solid $brand-primary;
   background-color: $paper;
   width: $dot-size;
   height: $dot-size;
@@ -38,7 +38,7 @@
     content: "";
     position: absolute;
     border-radius: 50%;
-    background-color: $r-fyi-blue;
+    background-color: $brand-primary;
     width: $dot-size - $dot-offset * 2;
     height: $dot-size - $dot-offset * 2;
     top: 50%;

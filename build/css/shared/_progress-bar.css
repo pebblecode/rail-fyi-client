@@ -17,7 +17,7 @@
   content: "";
   position: absolute;
   width: 98%;
-  background-color: $r-fyi-blue;
+  background-color: $brand-primary;
   height: 1px;
   top: 50%;
   margin-top: -1px;
@@ -26,7 +26,7 @@
 .progress-bar-dot {
 
   border-radius: 50%;
-  border: 1px solid $r-fyi-blue;
+  border: 1px solid $brand-primary;
   background-color: $paper;
   width: 21px;
   height: 21px;
@@ -42,7 +42,7 @@
   content: "";
   position: absolute;
   border-radius: 50%;
-  background-color: $r-fyi-blue;
+  background-color: $brand-primary;
   width: 21px - 3px * 2;
   height: 21px - 3px * 2;
   top: 50%;

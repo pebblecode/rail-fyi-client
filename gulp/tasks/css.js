@@ -13,7 +13,7 @@ gulp.task('css', function () {
     .pipe(postcss([
       require('precss'),
       require('autoprefixer'),
-      require('postcss-reporter')
+      require('postcss-pxtorem')
     ]))
     .pipe(gulp.dest(config.styles.dest))
     .pipe(gulpif(browserSync.active, browserSync.reload({ stream: true })));

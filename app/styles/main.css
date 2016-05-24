@@ -1,10 +1,11 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
 @import "./vendor/normalize";
 
-@import "./shared/mixins";
-@import "./shared/vars";
+@import "./base/layout";
+@import "./base/typography";
 
-@import "./shared/layout";
-@import "./shared/type";
 @import "./shared/buttons";
 @import "./shared/icons";
 @import "./shared/progress-bar";
@@ -14,5 +15,3 @@
 @import "./pages/homepage";
 @import "./pages/select-station";
 @import "./pages/send-complaint";
-
-@import "./transitions/select-station";

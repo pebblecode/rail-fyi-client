@@ -1,5 +1,14 @@
-@media screen and ( min-width: $small-break) {
-  .select-station .bottom-container {
-    margin-top: 200px;
+.select-station {
+  padding-top: 160px;
+
+  .icon-location {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and ( max-width: $bpoint-small) {
+      position: fixed;
+    }
   }
 }

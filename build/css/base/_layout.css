@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.app-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bottom-container {
+  width: 100%;
+  margin-top: 20px
+}
+
+@media screen and ( max-width: $bpoint-small) {
+
+  .bottom-container {
+    position: fixed;
+    bottom: 0;
+  }
+  }

@@ -1,14 +1,18 @@
 .icon-small, .icon-large {
-  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .icon-small {
+  display: inline-block;
   width: 40px;
   height: 40px;
 }
 
 .icon-large {
   width: 120px;
+  margin: auto;
+  display: table;
 }
 
 .icon-train {
@@ -18,12 +22,7 @@
 
 .icon-location {
   height: 140px;
-  background-image: url("../images/icon-large-location.svg");
-  position: fixed;
-  top: 140px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%)
+  background-image: url("../images/icon-large-location.svg")
 }
 
 .icon-location.loading {
@@ -34,10 +33,11 @@
   background-image: url("../images/icon-small-chevron.svg");
   -webkit-transition: background-position-y .25s ease-in-out;
   transition: background-position-y .25s ease-in-out;
+  background-position: top;
 }
 
 .disabled .icon-chevron {
-  background-position-y: 40px;
+  background-position: bottom;
 }
 
 .icon-agressive { background-image: url("../images/icon-small-agressive.svg"); }

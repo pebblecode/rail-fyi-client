@@ -17,7 +17,7 @@ class InProgressMessage extends Component {
             case 'plain':
               return <span key={idx}>{p.text}</span>;
             default:
-              return <Link className="btn" to={"/select-" + p.type} key={idx}>{p.text}</Link>;
+              return <Link className="btn btn-line" to={"/select-" + p.type} key={idx}>{p.text}</Link>;
           }
         });
     return (
