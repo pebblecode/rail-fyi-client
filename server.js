@@ -11,17 +11,17 @@ var ssl_options = {
 };
 
 var app = express();
-var server = http.createServer(app);
-var secureServer = https.createServer(ssl_options, app);
+// var server = http.createServer(app);
+// var secureServer = https.createServer(ssl_options, app);
 
-app.set('forceSSLOptions', {
-  enable301Redirects: true,
-  trustXFPHeader: false,
-  httpsPort: 4432,
-  sslRequiredMessage: 'SSL Required.'
-});
+// app.set('forceSSLOptions', {
+//   enable301Redirects: true,
+//   trustXFPHeader: false,
+//   httpsPort: 4432,
+//   sslRequiredMessage: 'SSL Required.'
+// });
 
-app.use(forceSSL);
+// app.use(forceSSL);
 app.use(express.static(path.join(__dirname, 'build')));
 
 // app.get('*', function(req, res, next) {
@@ -44,5 +44,7 @@ app.use('*', function(req, res) {
   res.sendFile('./build/index.html', {root: __dirname});
 });
 
-secureServer.listen(4432);
-server.listen(process.env.PORT || 3000);
+// secureServer.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000, function () {
+  console.log('server is listening.');
+});
