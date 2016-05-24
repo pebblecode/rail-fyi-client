@@ -32,7 +32,7 @@ function buildScript(file, watch) {
     bundler.on('update', rebundle);
   }
 
-  bundler.transform(babelify);
+  bundler.transform(['babelify', { compact: false }]);
   bundler.transform(debowerify);
 
   function rebundle() {

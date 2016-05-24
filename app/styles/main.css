@@ -1,0 +1,23 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./vendor/normalize";
+
+@import "./base/layout";
+@import "./base/typography";
+
+@import "./shared/buttons";
+@import "./shared/icons";
+@import "./shared/progress-bar";
+@import "./shared/message";
+@import "./shared/header";
+
+@import "./pages/base";
+@import "./pages/home";
+@import "./pages/select-station";
+@import "./pages/send-complaint";
+<<<<<<< HEAD:app/styles/main.css
+=======
+
+@import "./transitions/page-transition.scss";
+>>>>>>> master:app/styles/main.scss

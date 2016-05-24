@@ -1,0 +1,34 @@
+/* Colours */
+$paper: white;
+$ink: #151A29;
+
+$blue: #1168F3;
+
+$brand-primary: $blue;
+$brand-primary-dark: color($blue shade(50%));
+
+
+/* Type Sizes */
+$tera: 72px;
+$giga: 60px;
+$mega: 48px;
+$alpha: 30px;
+$beta: 24px;
+$gamma: 20px;
+$delta: 16px;
+$epsilon: 14px;
+$zeta: 12px;
+
+$font-sans: "acumin-pro", sans-serif;
+$font-regular: 400;
+$font-bold: 700;
+$font-black: 900;
+
+$body-font-weight: $font-regular;
+$body-font-size: $delta;
+
+/* Break sizes */
+$bpoint-small: 500px;
+$bpoint-medium: 768px;
+$bpoint-large: 1024px;
+$max-width: $bpoint-large;

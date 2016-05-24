@@ -80,9 +80,7 @@ class NearestStation extends Component {
     }
     return (
       <div>
-        <div className="center-dis">
-          <span className={iconClasses}></span>
-        </div>
+        <span className={iconClasses}></span>
         <ul className={ulClasses}>
           {this.state.nearestCode ? nearest : findingNearest}
         </ul>

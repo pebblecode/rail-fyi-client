@@ -35,8 +35,10 @@ class SelectDescription extends Component {
 
     return (
       <section className="select-description">
-        <StationOperator />
-        <InProgressMessage />
+        <div className="content-container">
+          <StationOperator />
+          <InProgressMessage />
+        </div>
         <div className="bottom-container">
           <p>Now go on, tell them what you thought.</p>
           <DescriptionForm {...this.props} options={descriptions}/>

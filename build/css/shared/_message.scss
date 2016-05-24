@@ -1,0 +1,19 @@
+// MESSAGE
+// ====================================
+.message-container {
+  font-size: $fs-medium;
+  font-weight: 900;
+  padding: 10px 20px;
+}
+// MESSAGE
+// ====================================
+.message-container span {
+  display: inline-block;
+  margin-right: 3px;
+}
+// MESSAGE
+// ====================================
+.message-container .btn {
+  margin-right: 4px;
+  margin-left: 1px;
+}

@@ -1,0 +1,43 @@
+button,
+.btn {
+  appearance: none;
+  background: 0;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  text-decoration: none;
+  display: inline-block;
+  color: $brand-primary;
+  font-weight: $font-bold;
+  transition: .25s ease-in-out;
+  font-size: $gamma;
+
+  &:hover {
+    color: $brand-primary-dark;
+  }
+}
+
+.btn-line {
+  border-bottom: 2px solid;
+}
+
+.btn-block {
+  margin: 10px auto;
+  padding: 6px 50px 10px;
+  border: 3px solid;
+  display: table;
+  text-align: center;
+
+  &:hover {
+    border-color: $brand-primary;
+    background-color: $brand-primary;
+    color: white;
+  }
+}
+
+.btn-large {
+  display: block;
+  font-size: $beta;
+  padding: 10px 20px 14px;
+  margin: 20px 0;
+}

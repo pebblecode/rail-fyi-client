@@ -1,0 +1,59 @@
+.progress-bar-container {
+  margin: 20px 40px;
+
+  @media screen and ( min-width: $bpoint-large) {
+    padding-left: 420px;
+  }
+}
+
+.progress-bar-list {
+  @mixin clearfix;
+
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 98%;
+    background-color: $brand-primary;
+    height: 1px;
+    top: 50%;
+    margin-top: -1px;
+  }
+}
+
+.progress-bar-dot {
+  $dot-size: 21px;
+  $dot-offset: 3px;
+
+  border-radius: 50%;
+  border: 1px solid $brand-primary;
+  background-color: $paper;
+  width: $dot-size;
+  height: $dot-size;
+  float: left;
+  position: relative;
+
+  &:not(:first-child) {
+    margin-left: calc(33.3333% - 28px);
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: $brand-primary;
+    width: calc($dot-size - $dot-offset * 2);
+    height: calc($dot-size - $dot-offset * 2);
+    top: 50%;
+    left: 50%;
+    margin: calc($dot-size / -2 + $dot-offset);
+    transform: scale(0);
+    transition: transform .25s;
+  }
+}
+
+.progress-1 .progress-bar-dot:nth-child(1):before { transform: scale(1); }
+.progress-2 .progress-bar-dot:nth-child(2):before { transform: scale(1); }
+.progress-3 .progress-bar-dot:nth-child(3):before { transform: scale(1); }
+.progress-4 .progress-bar-dot:nth-child(4):before { transform: scale(1); }

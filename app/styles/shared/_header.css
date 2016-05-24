@@ -1,0 +1,10 @@
+.app-header-container {
+  border-bottom: 1px solid $brand-primary;
+}
+
+.app-header-logo {
+  font-size: $alpha;
+  margin: 0;
+  text-align: center;
+  padding: 12px 0 14px;
+}

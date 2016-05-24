@@ -1,0 +1,20 @@
+.select-station {
+  padding-top: 160px;
+
+  .icon-location {
+    @media screen and ( max-width: $bpoint-large) {
+      position: absolute;
+      top: 140px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .btn-group-item {
+        padding-top: 15px;
+      }
+    }
+
+    @media screen and ( max-width: $bpoint-small) {
+      position: fixed;
+    }
+  }
+}

@@ -16,7 +16,7 @@ class Option extends Component {
     return (
       <li className="btn-group-item" onClick={this.props.onClick}>
         {icon}
-        <button className="btn">{option.name}</button>
+        <button className="btn btn-line">{option.name}</button>
         <span className="icon-small icon-chevron"></span>
       </li>
     );
