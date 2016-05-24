@@ -13,6 +13,6 @@
 @import "./shared/header";
 
 @import "./pages/base";
-@import "./pages/homepage";
+@import "./pages/home";
 @import "./pages/select-station";
 @import "./pages/send-complaint";
