@@ -3,14 +3,15 @@ var path = require('path');
 
 var app = express();
 
-app.use('*', function(req, res) {
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('*', function(req, res, next) {
   console.log('HEY');
   var schema = req.headers['x-forwarded-proto'];
   console.log(schema);
 
   if (schema === 'https') {
     console.log('ALREADY SECURE');
-    res.sendFile(path.join(__dirname, './build/index.html'));
   } else {
     console.log(req.headers, req.url);
     var https = 'https://' + req.headers.host + req.url;
@@ -19,7 +20,9 @@ app.use('*', function(req, res) {
   }
 });
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use('*', function(req, res) {
+  res.sendFile('./build/index.html', {root: __dirname});
+});
 
 app.listen(process.env.PORT || 3000, function () {
   console.log('Listening on port 3000');
