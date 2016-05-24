@@ -19,6 +19,8 @@ app.use('*', function(req, res) {
   }
 });
 
+app.use(express.static(path.join(__dirname, 'build')));
+
 app.listen(process.env.PORT || 3000, function () {
   console.log('Listening on port 3000');
 });
