@@ -54,7 +54,7 @@ button:hover, .btn:hover {
   pointer-events: none;
 }
 
-.btn-group-list.disabled .btn-group-item .btn, .btn-group-list.disabled .btn-group-item button {
+.btn-group-list.disabled .btn-group-item button, .btn-group-list.disabled .btn-group-item .btn {
   color: rgb(115, 118, 127);
   cursor: default;
 }

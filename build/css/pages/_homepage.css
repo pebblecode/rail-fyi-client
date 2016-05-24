@@ -1,5 +1,6 @@
 .home {
-  padding-top: 40px;
+  margin: 40px auto 0;
+  max-width: $max-width;
 }
 .home .bottom-container {
   margin: 60px auto 40px;

@@ -55,8 +55,8 @@ button,
   .btn-group-item {
     pointer-events: none;
 
-    .btn,
-    button {
+    button,
+    .btn {
       color: color(#151A29 tint(40%));
       cursor: default;
     }

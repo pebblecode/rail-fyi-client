@@ -5,6 +5,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
 }
 
 ul {

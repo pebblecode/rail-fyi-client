@@ -1,9 +1,15 @@
+html {
+  font-size: 100%;
+
+  @media screen and ( min-width: $bpoint-medium) {
+    font-size: 150%;
+  }
+}
+
 body {
-  background-color: $paper;
   color: $ink;
   font-family: $font-sans;
   font-weight: $font-regular;
-  font-size: $body-font-size;
   line-height: 1.3;
 }
 

@@ -31,3 +31,4 @@ $body-font-size: $delta;
 $bpoint-small: 500px;
 $bpoint-medium: 768px;
 $bpoint-large: 1024px;
+$max-width: $bpoint-large;
