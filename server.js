@@ -10,6 +10,7 @@ app.use('*', function(req, res) {
 
   if (schema === 'https') {
     console.log('ALREADY SECURE');
+    console.log('dirname is' + __dirname);
     res.sendFile(path.join(__dirname, './build/index.html'));
   } else {
     console.log(req.headers, req.url);
