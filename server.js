@@ -5,8 +5,10 @@ var app = express();
 
 app.use('*', function(req, res) {
   console.log('HEY');
-  console.log(req.secure);
-  if (req.secure) {
+  var schema = req.headers['x-forwarded-proto'];
+  console.log(schema);
+
+  if (schema === 'https') {
     console.log('ALREADY SECURE');
     res.sendFile('./build/index.html', {root: __dirname});
   } else {
