@@ -5,7 +5,7 @@
 
 .content-container {
   @media screen and ( min-width: $bpoint-large) {
-    padding: 10px 20px 10px 420px;
+    padding: 10px 20px 10px 440px;
   }
 }
 
@@ -15,7 +15,7 @@
 
   @media screen and ( min-width: $bpoint-large) {
     height: calc(100% - 85px);
-    width: 400px;
+    width: 420px;
     position: absolute;
     top: 65px;
     left: 0;
@@ -30,14 +30,8 @@
 
 /* Button Lists */
 .btn-group-list {
-  .btn-group-item {
-    &:hover .btn {
-      color: $brand-primary-dark;
-    }
-  }
-
   @media screen and ( min-width: $bpoint-large) {
-    width: 400px;
+    width: 420px;
     position: absolute;
     bottom: 0;
   }
@@ -56,12 +50,17 @@
 }
 
 .btn-group-item {
+  transition: .25s;
   border-top: 1px solid $brand-primary;
   padding: 10px 50px 10px 20px;
   cursor: pointer;
 
   @media screen and ( min-width: $bpoint-medium) {
     padding: 20px 50px 20px 20px;
+  }
+
+  &:hover {
+    background-color: color(#1168F3 a(10%));
   }
 
   .icon-small {

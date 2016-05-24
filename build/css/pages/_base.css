@@ -9,7 +9,7 @@
 @media screen and ( min-width: $bpoint-large) {
 
   .content-container {
-    padding: 10px 20px 10px 420px;
+    padding: 10px 20px 10px 440px;
   }
   }
 
@@ -22,7 +22,7 @@
 
   .bottom-container {
     height: calc(100% - 85px);
-    width: 400px;
+    width: 420px;
     position: absolute;
     top: 65px;
     left: 0;
@@ -39,15 +39,12 @@
   }
 
 /* Button Lists */
-.btn-group-list .btn-group-item {
-}
-.btn-group-list .btn-group-item:hover .btn {
-  color: $brand-primary-dark;
+.btn-group-list {
 }
 @media screen and ( min-width: $bpoint-large) {
 
   .btn-group-list {
-    width: 400px;
+    width: 420px;
     position: absolute;
     bottom: 0;
   }
@@ -63,6 +60,8 @@
 }
 
 .btn-group-item {
+  -webkit-transition: .25s;
+  transition: .25s;
   border-top: 1px solid $brand-primary;
   padding: 10px 50px 10px 20px;
   cursor: pointer;
@@ -87,3 +86,7 @@
     padding: 20px 50px 20px 20px;
   }
   }
+
+.btn-group-item:hover {
+  background-color: rgba(17, 104, 243, 0.1);
+}

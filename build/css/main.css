@@ -525,10 +525,6 @@ h1, h2, h3, h4, h5, h6 {
 
     color: #1168F3;
 }
-p {
-
-    padding: 0 20px;
-}
 a {
 
     color: #1168F3;
@@ -747,7 +743,7 @@ button:hover, .btn:hover {
 
     .progress-bar-container {
 
-        padding-left: 400px;
+        padding-left: 420px;
     }
 }
 .progress-bar-list {
@@ -808,15 +804,15 @@ button:hover, .btn:hover {
 
     background-color: #1168F3;
 
-    width: 21px - 3px * 2;
+    width: calc(21px - 3px * 2);
 
-    height: 21px - 3px * 2;
+    height: calc(21px - 3px * 2);
 
     top: 50%;
 
     left: 50%;
 
-    margin: 21px / -2 + 3px;
+    margin: calc(21px / -2 + 3px);
 
     -webkit-transform: scale(0);
 
@@ -894,7 +890,7 @@ button:hover, .btn:hover {
 
     .content-container {
 
-        padding: 10px 20px 10px 420px;
+        padding: 10px 20px 10px 440px;
     }
 }
 
@@ -911,7 +907,7 @@ button:hover, .btn:hover {
 
         height: calc(100% - 85px);
 
-        width: 400px;
+        width: 420px;
 
         position: absolute;
 
@@ -935,18 +931,13 @@ button:hover, .btn:hover {
 
 /* Button Lists */
 
-.btn-group-list .btn-group-item {}
-
-.btn-group-list .btn-group-item:hover .btn {
-
-    color: rgb(9, 52, 122);
-}
+.btn-group-list {}
 
 @media screen and ( min-width: 1024px) {
 
     .btn-group-list {
 
-        width: 400px;
+        width: 420px;
 
         position: absolute;
 
@@ -967,6 +958,10 @@ button:hover, .btn:hover {
 }
 
 .btn-group-item {
+
+    -webkit-transition: .25s;
+
+    transition: .25s;
 
     border-top: 1px solid #1168F3;
 
@@ -999,11 +994,18 @@ button:hover, .btn:hover {
         padding: 20px 50px 20px 20px;
     }
 }
+
+.btn-group-item:hover {
+
+    background-color: rgba(17, 104, 243, 0.1);
+}
 .home {
 
     text-align: center;
 
     margin: 40px auto 0;
+
+    padding: 0 40px;
 
     max-width: 1024px;
 }
@@ -1043,7 +1045,7 @@ button:hover, .btn:hover {
 
     .select-complaint .btn-group-item {
 
-        width: 400px;
+        width: 420px;
 
         position: absolute;
 

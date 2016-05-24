@@ -5,7 +5,7 @@
   @media screen and ( min-width: $bpoint-large) {
 
   .progress-bar-container {
-    padding-left: 400px
+    padding-left: 420px
   }
   }
 
@@ -50,11 +50,11 @@
   position: absolute;
   border-radius: 50%;
   background-color: $brand-primary;
-  width: 21px - 3px * 2;
-  height: 21px - 3px * 2;
+  width: calc(21px - 3px * 2);
+  height: calc(21px - 3px * 2);
   top: 50%;
   left: 50%;
-  margin: 21px / -2 + 3px;
+  margin: calc(21px / -2 + 3px);
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: -webkit-transform .25s;

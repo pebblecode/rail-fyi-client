@@ -2,7 +2,7 @@
   margin: 20px 40px;
 
   @media screen and ( min-width: $bpoint-large) {
-    padding-left: 400px;
+    padding-left: 420px;
   }
 }
 
@@ -43,11 +43,11 @@
     position: absolute;
     border-radius: 50%;
     background-color: $brand-primary;
-    width: $dot-size - $dot-offset * 2;
-    height: $dot-size - $dot-offset * 2;
+    width: calc($dot-size - $dot-offset * 2);
+    height: calc($dot-size - $dot-offset * 2);
     top: 50%;
     left: 50%;
-    margin: $dot-size / -2 + $dot-offset;
+    margin: calc($dot-size / -2 + $dot-offset);
     transform: scale(0);
     transition: transform .25s;
   }
