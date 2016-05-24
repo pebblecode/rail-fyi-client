@@ -7,11 +7,12 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(function(req, res, next) {
   console.log('HEY');
-  console.log(req);
+  console.log(req.secure);
   if (req.secure) {
     console.log('ALREADY SECURE');
     next();
   } else {
+    console.log(res.headers, req.url);
     var https = 'https://' + res.headers.host + req.url;
     console.log('REDIRECTING TO HTTPS', https);
     res.redirect(https);
