@@ -7,6 +7,10 @@
       top: 140px;
       left: 50%;
       transform: translateX(-50%);
+
+      .btn-group-item {
+        padding-top: 15px;
+      }
     }
 
     @media screen and ( max-width: $bpoint-small) {
