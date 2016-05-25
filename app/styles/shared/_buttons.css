@@ -29,9 +29,8 @@ button,
   text-align: center;
 
   &:hover {
-    border-color: $brand-primary;
-    background-color: $brand-primary;
-    color: white;
+    background-color: color(#1168F3 a(10%));
+    color: $brand-primary;
   }
 }
 
