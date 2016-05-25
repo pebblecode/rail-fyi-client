@@ -17,10 +17,16 @@ class SendComplaint extends Component {
   }
 
   _buildMessage() {
+    let emailEndpoint = '';
+    let tweetEndpoint = '';
     const { station, subject, description } = this.props;
 
-    const stationOperatorCode =
-      stationList.filter(s => s.name === station)[0].stationOperator;
+    const filteredStations =
+      stationList.filter(s => s.name === station);
+
+    if (!filteredStations.length) return { emailEndpoint, tweetEndpoint };
+
+    const stationOperatorCode = filteredStations[0].stationOperator;
     const stationOperator =
       config.stationOperators.filter(o => o.code === stationOperatorCode)[0];
     const finalMessage =
@@ -28,14 +34,14 @@ class SendComplaint extends Component {
         .buildInProgressMessageParts(station, subject, description)
         .map(p => p.text)
         .join(' ');
-    const emailEndpoint =
+    emailEndpoint =
       stationOperator.email
       ? "mailto:"
           + stationOperator.email
           + "?body="
           + encodeURI(finalMessage)
       : null;
-    const tweetEndpoint =
+    tweetEndpoint =
       stationOperator.twitter
       ? "http://twitter.com/home/?status="
           + stationOperator.twitter

@@ -28,6 +28,8 @@ class SubjectForm extends Component {
 
     const options = this.props.options;
 
+    if (!options) return;
+
     const optionElements = options.map((option) => {
       return this._renderOption(option);
     });

@@ -10,8 +10,10 @@ class NearestStation extends Component {
 
   constructor(props) {
     super(props);
+
     this.stationList = stationList;
     this.state = {};
+
     this._findNearestLocation();
   }
 
@@ -38,7 +40,6 @@ class NearestStation extends Component {
     let navigator = window.navigator;
 
     if (navigator && navigator.geolocation) {
-
       navigator.geolocation.getCurrentPosition((pos) => {
         const distances = this.stationList.map(station => {
           return this._determineDistance(pos.coords.latitude, pos.coords.longitude, station.latitude, station.longitude)
@@ -56,7 +57,7 @@ class NearestStation extends Component {
 
         const station = this.stationList[minIndex];
         const distance = distances[minIndex];
-
+        
         this._updateLocation(station, distance);
 
       });

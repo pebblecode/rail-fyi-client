@@ -26,6 +26,8 @@ class DescriptionForm extends Component {
   _renderOptions() {
     const options = this.props.options;
 
+    if (!options) return;
+
     const optionElements = options.map((option) => {
       return this._renderOption(option);
     });
