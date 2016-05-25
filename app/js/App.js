@@ -22,10 +22,6 @@ class App extends Component {
     super(props);
   }
 
-  componentWillMount() {
-    console.log('About to mount App');
-  }
-
   render() {
     return (
       <div className="app-container">
