@@ -41,7 +41,7 @@ class SendComplaint extends Component {
           + stationOperator.twitter
           + " "
           + finalMessage
-          + "via %23RailFYI"
+          + " via %23RailFYI"
       : null;
 
     return { emailEndpoint, tweetEndpoint };
