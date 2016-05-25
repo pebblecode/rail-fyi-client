@@ -25,7 +25,7 @@ class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <Header />
+        <Header path={this.props.location.pathname} />
         <ProgressBar stage={this.props.page} />
         <ReactCSSTransitionGroup component='div' transitionName="pageTransition"
           transitionEnterTimeout={500}

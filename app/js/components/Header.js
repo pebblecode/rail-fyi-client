@@ -6,15 +6,20 @@ import { Link } from 'react-router';
 
 class Header extends Component {
 
-  constructor(props) {
-    super(props);
+  _determineLink() {
+    console.log(this.props);
+    if (this.props.path === '/faq') {
+      return '/';
+    } else {
+      return '/faq';
+    }
   }
 
   render() {
     return (
       <div className="app-header-container">
         <h1 className="app-header-logo">
-          <Link to="/faq">Rail fyi</Link>
+          <Link to={this._determineLink()}>Rail fyi</Link>
         </h1>
       </div>
     );
