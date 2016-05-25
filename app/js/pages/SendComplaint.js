@@ -2,8 +2,6 @@
 
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
-
 import { setStage } from '../actions/stage';
 import InProgressMessage from '../components/InProgressMessage';
 import SendButtons from '../components/SendButtons';
