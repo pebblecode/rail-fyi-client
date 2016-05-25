@@ -1,8 +1,16 @@
 'use strict';
 
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+import { setStage } from '../actions/stage';
 
 class Faq extends Component {
+  componentWillMount() {
+    // don't render the progress bar
+    this.props.dispatch(setStage(0));
+  }
+
   render() {
     return (
       <div>
@@ -21,4 +29,4 @@ class Faq extends Component {
   }
 }
 
-export default Faq;
+export default connect()(Faq);
