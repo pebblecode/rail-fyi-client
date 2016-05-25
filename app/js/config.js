@@ -61,7 +61,7 @@ const subjects = [
       name: 'Litter',
       icon: 'icon-litter',
       message: {
-        pre: 'abysmall -',
+        pre: 'abysmal -',
         main: 'litter everywhere!',
         post: ''
       }
