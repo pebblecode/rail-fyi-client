@@ -11,6 +11,7 @@ import SelectSubject from './pages/SelectSubject';
 import SelectStation from './pages/SelectStation';
 import SelectDescription from './pages/SelectDescription';
 import SendComplaint from './pages/SendComplaint';
+import Faq from './pages/Faq';
 
 const Root = props => {
   const redirectToHomeIfNoWizardItem = (wizardItem, replace) => {
@@ -45,6 +46,7 @@ const Root = props => {
           <Route path="/select-subject" onEnter={redirectToHomeIfNoStation} component={SelectSubject} />
           <Route path="/select-description" onEnter={redirectToHomeIfNoSubject} component={SelectDescription} />
           <Route path="/send-complaint" onEnter={redirectToHomeIfNoDescription} component={SendComplaint} />
+          <Route path="/faq" component={Faq} />
 
           <Route path="*" component={NotFoundPage} />
 
