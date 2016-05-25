@@ -2,20 +2,18 @@
 
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { reduxForm } from 'redux-form';
+import { reduxForm, change } from 'redux-form';
 
 import NearestStation from '../components/NearestStation';
 import StationDropdown from '../components/StationDropdown';
 
 class StationForm extends Component {
-  constructor(props) {
-    super(props);
 
+  componentWillMount() {
     // Delete old selected station, subject & description if present (i.e. in back navigation case)
-    const { station, subject, description } = props.fields;
-    station.onChange(null);
-    subject.onChange(null);
-    description.onChange(null);
+    this.props.dispatch(change('wizard', 'station', null));
+    this.props.dispatch(change('wizard', 'subject', null));
+    this.props.dispatch(change('wizard', 'description', null));
   }
 
   _onSelectItem(item) {

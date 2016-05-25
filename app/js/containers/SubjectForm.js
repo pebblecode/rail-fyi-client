@@ -2,18 +2,15 @@
 
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { reduxForm } from 'redux-form';
+import { reduxForm, change } from 'redux-form';
 
 import Option from '../components/Option';
 
 class SubjectForm extends Component {
-  constructor(props) {
-    super(props);
-
-    // Delete old selected subject & description if present (i.e. in back navigation case)
-    const { subject, description } = props.fields;
-    subject.onChange(null);
-    description.onChange(null);
+  componentWillMount() {
+    // Delete old selected station, subject & description if present (i.e. in back navigation case)
+    this.props.dispatch(change('wizard', 'subject', null))
+    this.props.dispatch(change('wizard', 'description', null))
   }
 
   _onOptionClicked(option) {
