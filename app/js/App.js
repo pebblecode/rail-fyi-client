@@ -27,9 +27,9 @@ class App extends Component {
       <div className="app-container">
         <Header path={this.props.location.pathname} />
         <ProgressBar stage={this.props.page} />
-        <ReactCSSTransitionGroup component='div' transitionName="pageTransition"
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={300}>
+        <ReactCSSTransitionGroup component='span' transitionName="pageTransition"
+          transitionEnterTimeout={800}
+          transitionLeaveTimeout={500}>
           {
             React.cloneElement(this.props.children, {
               key: this.props.location.pathname
