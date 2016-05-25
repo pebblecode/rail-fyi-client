@@ -7,7 +7,6 @@ import { Link } from 'react-router';
 class Header extends Component {
 
   _determineLink() {
-    console.log(this.props);
     if (this.props.path === '/faq') {
       return '/';
     } else {
