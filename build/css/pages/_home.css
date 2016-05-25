@@ -1,9 +1,0 @@
-.home {
-  text-align: center;
-  margin: 40px auto 0;
-  padding: 0 40px;
-  max-width: $max-width;
-}
-.home .btn {
-  margin: 60px auto 40px;
-}
