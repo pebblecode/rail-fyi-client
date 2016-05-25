@@ -8,10 +8,8 @@ import { setStage } from '../actions/stage';
 import StationForm from '../containers/StationForm';
 
 class SelectStation extends Component {
-  constructor(props) {
-    super(props);
-
-    props.dispatch(setStage(1));
+  componentWillMount() {
+    this.props.dispatch(setStage(1));
   }
 
   render() {

@@ -11,10 +11,10 @@ import InProgressMessage from '../components/InProgressMessage';
 import StationOperator from '../components/StationOperator';
 
 class SelectDescription extends Component {
-  constructor(props) {
-    super(props);
-    props.dispatch(setStage(3));
+  componentWillMount() {
+    this.props.dispatch(setStage(3));
   }
+
   _findDescriptions() {
     const { category } = this.props;
     const options = config.subjects;

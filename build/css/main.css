@@ -866,6 +866,10 @@ button:hover, .btn:hover {
 
     margin: 0 3px;
 }
+.message-container span {
+
+    margin: 0 3px;
+}
 .app-header-container {
 
     border-bottom: 1px solid #1168F3;

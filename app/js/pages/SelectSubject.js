@@ -11,9 +11,8 @@ import SubjectForm from '../containers/SubjectForm';
 import StationOperator from '../components/StationOperator';
 
 class SelectSubject extends Component {
-  constructor(props) {
-    super(props);
-    props.dispatch(setStage(2));
+  componentWillMount() {
+    this.props.dispatch(setStage(2));
   }
 
   render() {

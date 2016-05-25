@@ -12,10 +12,10 @@ import config from '../config';
 import message from '../lib/message';
 
 class SendComplaint extends Component {
-  constructor(props) {
-    super(props);
-    props.dispatch(setStage(4));
+  componentWillMount() {
+    this.props.dispatch(setStage(4));
   }
+
   _buildMessage() {
     const { station, subject, description } = this.props;
 
