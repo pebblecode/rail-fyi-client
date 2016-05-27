@@ -5,26 +5,27 @@
 
 .content-container {
   @media screen and ( min-width: $bpoint-large) {
-    padding: 10px 20px 10px 440px;
+    padding: 10px 440px 10px 20px;
   }
 }
 
 .bottom-container {
   width: 100%;
   margin-top: 20px;
+  bottom: 0;
 
   @media screen and ( min-width: $bpoint-large) {
     height: calc(100% - 85px);
     width: 420px;
     position: absolute;
     top: 65px;
-    left: 0;
-    border-right: 1px solid $brand-primary;
+    right: 0;
+    border-left: 1px solid $brand-primary;
   }
 
   @media screen and ( max-width: $bpoint-small) {
     position: fixed;
-    bottom: 0;
+    bottom: 40px;
   }
 }
 
@@ -33,7 +34,7 @@
   @media screen and ( min-width: $bpoint-large) {
     width: 420px;
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
   }
 }
 

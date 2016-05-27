@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 class Faq extends Component {
   render() {
     return (
-      <div>
+      <div className="faq-container">
         <h3>What is this?</h3>
         <p>A site where you can give feedback on stations in the UK</p>
         <h3>How do I use this?</h3>

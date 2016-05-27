@@ -1,8 +1,8 @@
 'use strict';
 
 import React, { Component } from 'react';
-import Faq from '../pages/Faq';
 import { Link } from 'react-router';
+import HomePage from '../pages/HomePage';
 
 class Header extends Component {
 
@@ -13,9 +13,9 @@ class Header extends Component {
   render() {
     return (
       <div className="app-header-container">
-        <h1 className="app-header-logo">
-          <Link to="/faq">Rail fyi</Link>
-        </h1>
+        <div className="app-header-logo">
+          <Link to="/"></Link>
+        </div>
       </div>
     );
   }

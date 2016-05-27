@@ -3,8 +3,13 @@
 }
 
 .app-header-logo {
-  font-size: $alpha;
-  margin: 0;
-  text-align: center;
   padding: 12px 0 14px;
+
+  a {
+    background: url('../images/logo1.svg') no-repeat;
+    width: 160px;
+    height: 58px;
+    display: block;
+    margin: 0 auto;
+  }
 }
