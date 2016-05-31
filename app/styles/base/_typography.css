@@ -13,10 +13,15 @@ body {
   line-height: 1.3;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   font-size: $gamma;
   font-weight: $font-bold;
   color: $brand-primary;
+}
+
+h1 {
+  font-size: $alpha;
 }
 
 p {

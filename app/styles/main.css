@@ -11,10 +11,12 @@
 @import "./shared/progress-bar";
 @import "./shared/message";
 @import "./shared/header";
+@import "./shared/footer";
 
 @import "./pages/base";
 @import "./pages/home";
 @import "./pages/select-station";
 @import "./pages/send-complaint";
+@import "./pages/faq";
 
 @import "./transitions/page-transition";
