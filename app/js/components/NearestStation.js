@@ -1,7 +1,6 @@
 'use strict';
 
 import React, { PropTypes, Component } from 'react';
-import { Link } from 'react-router';
 
 import stationList from '../data/station-list';
 import Option from '../components/Option';
@@ -28,21 +27,23 @@ class NearestStation extends Component {
   }
 
   _updateLocation(station, distance) {
-    this.setState({
-      nearestCode: station.crsCode,
-      nearestName: station.name,
-      distance: Math.round(distance)
-    });
+    setTimeout(() => {
+      this.setState({
+        nearestCode: station.crsCode,
+        nearestName: station.name,
+        distance: Math.round(distance)
+      });
+    }, 1000);
   }
 
   _findNearestLocation() {
 
-    let navigator = window.navigator;
+    const navigator = window.navigator;
 
     if (navigator && navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((pos) => {
         const distances = this.stationList.map(station => {
-          return this._determineDistance(pos.coords.latitude, pos.coords.longitude, station.latitude, station.longitude)
+          return this._determineDistance(pos.coords.latitude, pos.coords.longitude, station.latitude, station.longitude);
         });
 
         let minValue = Infinity;
@@ -57,7 +58,7 @@ class NearestStation extends Component {
 
         const station = this.stationList[minIndex];
         const distance = distances[minIndex];
-        
+
         this._updateLocation(station, distance);
 
       });
@@ -74,11 +75,11 @@ class NearestStation extends Component {
       <Option
         option={{name: stationName}}
         onClick={this.props.onStationClick.bind(null, stationName)} />;
-    let iconClasses = "icon-large icon-location";
-    let ulClasses = "btn-group-list";
+    let iconClasses = 'icon-large icon-location';
+    let ulClasses = 'btn-group-list';
     if (!this.state.nearestCode) {
-      ulClasses += " disabled";
-      iconClasses += " loading";
+      ulClasses += ' disabled';
+      iconClasses += ' loading';
     }
     return (
       <div>
