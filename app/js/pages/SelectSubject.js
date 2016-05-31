@@ -1,6 +1,6 @@
 'use strict';
 
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 import config from '../config';
@@ -19,7 +19,7 @@ class SelectSubject extends Component {
       return {
         name: subject.name,
         icon: subject.icon
-      }
+      };
     });
 
     return (
@@ -36,5 +36,9 @@ class SelectSubject extends Component {
     );
   }
 }
+
+SelectSubject.propTypes = {
+  dispatch: PropTypes.func.isRequired
+};
 
 export default connect()(SelectSubject);
