@@ -4,6 +4,7 @@ import React, { PropTypes, Component } from 'react';
 
 import stationList from '../data/station-list';
 import Option from '../components/Option';
+import { setStation } from '../actions/station';
 
 class NearestStation extends Component {
 
@@ -28,11 +29,11 @@ class NearestStation extends Component {
 
   _updateLocation(station, distance) {
     setTimeout(() => {
-      this.setState({
+      this.props.dispatch(setStation({
         nearestCode: station.crsCode,
         nearestName: station.name,
         distance: Math.round(distance)
-      });
+      }));
     }, 1000);
   }
 
@@ -68,7 +69,7 @@ class NearestStation extends Component {
   }
 
   render() {
-    const stationName = this.state.nearestName;
+    const stationName = this.props.nearestName;
     const findingNearest =
       <Option option={{name: 'Finding nearest station...'}} />;
     const nearest =
@@ -77,7 +78,7 @@ class NearestStation extends Component {
         onClick={this.props.onStationClick.bind(null, stationName)} />;
     let iconClasses = 'icon-large icon-location';
     let ulClasses = 'btn-group-list';
-    if (!this.state.nearestCode) {
+    if (!this.props.nearestCode) {
       ulClasses += ' disabled';
       iconClasses += ' loading';
     }
@@ -85,14 +86,17 @@ class NearestStation extends Component {
       <div>
         <span className={iconClasses}></span>
         <ul className={ulClasses}>
-          {this.state.nearestCode ? nearest : findingNearest}
+          {this.props.nearestCode ? nearest : findingNearest}
         </ul>
       </div>);
   }
 }
 
 NearestStation.propTypes = {
-  onStationClick: PropTypes.func
+  dispatch: PropTypes.func.isRequired,
+  onStationClick: PropTypes.func,
+  nearestCode: PropTypes.string,
+  nearestName: PropTypes.string
 };
 
 export default NearestStation;
