@@ -1,9 +1,7 @@
 'use strict';
 
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import classnames from 'classnames';
-
-import Progress from '../components/ProgressBar';
 
 class Option extends Component {
   render() {
@@ -22,5 +20,13 @@ class Option extends Component {
     );
   }
 }
+
+Option.propTypes = {
+  option: PropTypes.shape({
+    icon: PropTypes.string,
+    name: PropTypes.string
+  }),
+  onClick: PropTypes.func
+};
 
 export default Option;

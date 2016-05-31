@@ -1,6 +1,6 @@
 'use strict';
 
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Router, Route, IndexRoute } from 'react-router';
 import { Provider } from 'react-redux';
 
@@ -54,6 +54,11 @@ const Root = props => {
       </Router>
     </Provider>
   );
+};
+
+Root.propTypes = {
+  store: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired
 };
 
 export default Root;

@@ -18,12 +18,12 @@ class ProgressBar extends Component {
       );
     }
     return (
-      <div className="progress-bar-container">
-        <ul className={"progress-bar-list progress-" + this.props.stage}>
-          <li className="progress-bar-dot"><Link className={this._shouldBeClickable(1)} to="/select-station"></Link></li>
-          <li className="progress-bar-dot"><Link className={this._shouldBeClickable(2)} to="/select-subject"></Link></li>
-          <li className="progress-bar-dot"><Link className={this._shouldBeClickable(3)} to="/select-description"></Link></li>
-          <li className="progress-bar-dot"><Link className={this._shouldBeClickable(4)} to="/send-complaint"></Link></li>
+      <div className='progress-bar-container'>
+        <ul className={'progress-bar-list progress-' + this.props.stage}>
+          <li className='progress-bar-dot'><Link className={this._shouldBeClickable(1)} to='/select-station'></Link></li>
+          <li className='progress-bar-dot'><Link className={this._shouldBeClickable(2)} to='/select-subject'></Link></li>
+          <li className='progress-bar-dot'><Link className={this._shouldBeClickable(3)} to='/select-description'></Link></li>
+          <li className='progress-bar-dot'><Link className={this._shouldBeClickable(4)} to='/send-complaint'></Link></li>
         </ul>
       </div>
     );

@@ -348,4 +348,4 @@ const stationOperators = [
   }
 ];
 
-export default { subjects, stationOperators }
+export default { subjects, stationOperators };

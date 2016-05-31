@@ -8,21 +8,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ProgressBar from './components/ProgressBar';
 
-const propTypes = {
-  params: PropTypes.object,
-  query: PropTypes.object,
-  children: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.object
-  ])
-};
-
 class App extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="app-container">
@@ -41,10 +27,20 @@ class App extends Component {
       </div>
     );
   }
-
 }
 
-App.propTypes = propTypes;
+App.propTypes =  {
+  params: PropTypes.object,
+  query: PropTypes.object,
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object
+  ]),
+  location: PropTypes.shape({
+    pathname:  React.PropTypes.string
+  }),
+  page: PropTypes.string
+};
 
 function mapStateToProps(state) {
   return {
@@ -52,4 +48,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(App)
+export default connect(mapStateToProps)(App);

@@ -1,6 +1,6 @@
 'use strict';
 
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 class ShowTweet extends Component {
   render() {
@@ -13,5 +13,9 @@ class ShowTweet extends Component {
     );
   }
 }
+
+ShowTweet.propTypes = {
+  tweet: PropTypes.string.isRequired
+};
 
 export default ShowTweet;

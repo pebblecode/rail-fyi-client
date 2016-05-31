@@ -9,8 +9,8 @@ import Option from '../components/Option';
 class SubjectForm extends Component {
   componentWillMount() {
     // Delete old selected station, subject & description if present (i.e. in back navigation case)
-    this.props.dispatch(change('wizard', 'subject', null))
-    this.props.dispatch(change('wizard', 'description', null))
+    this.props.dispatch(change('wizard', 'subject', null));
+    this.props.dispatch(change('wizard', 'description', null));
   }
 
   _onOptionClicked(option) {
@@ -22,7 +22,7 @@ class SubjectForm extends Component {
   _renderOption(option) {
     return (
       <Option key={option.name} option={option} onClick={this._onOptionClicked.bind(this, option.name)} />
-    )
+    );
   }
   _renderOptions() {
 
@@ -54,8 +54,11 @@ SubjectForm.propTypes = {
   fields: PropTypes.object.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   resetForm: PropTypes.func.isRequired,
-  submitting: PropTypes.bool.isRequired
-}
+  submitting: PropTypes.bool.isRequired,
+  dispatch: PropTypes.func.isRequired,
+  history: PropTypes.object.isRequired,
+  options: PropTypes.array.isRequired
+};
 
 function mapStateToProps(state) {
   return {

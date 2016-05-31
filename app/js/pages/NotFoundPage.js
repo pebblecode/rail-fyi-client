@@ -1,17 +1,8 @@
 'use strict';
 
-import React, { PropTypes, Component } from 'react';
-
-const propTypes = {
-  currentUser: PropTypes.object
-};
+import React, { Component } from 'react';
 
 class NotFoundPage extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <section className="not-found">
@@ -19,9 +10,6 @@ class NotFoundPage extends Component {
       </section>
     );
   }
-
 }
-
-NotFoundPage.propTypes = propTypes;
 
 export default NotFoundPage;

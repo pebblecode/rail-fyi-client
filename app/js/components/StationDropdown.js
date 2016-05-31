@@ -11,7 +11,7 @@ class StationDropdown extends Component {
     this.stationList = stationList.map(station => station.name);
     this.state = {
       value: ''
-    }
+    };
   }
 
   _onSelectItem(value) {

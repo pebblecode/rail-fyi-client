@@ -44,6 +44,7 @@ class SendComplaint extends Component {
         .buildInProgressMessageParts(station, subject, description)
         .map(p => p.text)
         .join(' ');
+
     emailEndpoint =
       stationOperator.email
       ? 'mailto:'
@@ -55,6 +56,7 @@ class SendComplaint extends Component {
           + '%0D%0A%0D%0A' // double break line
           + encodeURI(emailSignature)
       : null;
+
     tweetEndpoint =
       stationOperator.twitter
       ? 'http://twitter.com/home/?status='

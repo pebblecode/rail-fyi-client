@@ -21,7 +21,7 @@ class DescriptionForm extends Component {
   _renderOption(option) {
     return (
       <Option key={option.name} option={option} onClick={this._onOptionClicked.bind(this, option.name)} />
-    )
+    );
   }
   _renderOptions() {
     const options = this.props.options;
@@ -52,8 +52,11 @@ DescriptionForm.propTypes = {
   fields: PropTypes.object.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   resetForm: PropTypes.func.isRequired,
-  submitting: PropTypes.bool.isRequired
-}
+  submitting: PropTypes.bool.isRequired,
+  dispatch: PropTypes.func.isRequired,
+  history: PropTypes.object.isRequired,
+  options: PropTypes.array.isRequired
+};
 
 function mapStateToProps(state) {
   return {

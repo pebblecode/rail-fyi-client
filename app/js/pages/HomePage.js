@@ -6,16 +6,7 @@ import { Link } from 'react-router';
 
 import { setStage } from '../actions/stage';
 
-const propTypes = {
-  currentUser: PropTypes.object
-};
-
 class HomePage extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
   componentWillMount() {
     this.props.dispatch(setStage(0));
   }
@@ -33,6 +24,8 @@ class HomePage extends Component {
 
 }
 
-HomePage.propTypes = propTypes;
+HomePage.propTypes = {
+  dispatch: PropTypes.func.isRequired
+};
 
-export default connect()(HomePage)
+export default connect()(HomePage);
