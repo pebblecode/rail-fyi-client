@@ -24,8 +24,8 @@ class HomePage extends Component {
     return (
       <section className="home">
         <span className="icon-large icon-train"></span>
-        <h1>Hello and Welcome</h1>
-        <p>To Rail FYI. Your one stop shop for Train based whinging. Slick, easy to use and oh so fast Rail FYI will let you vent right from your mobile device!</p>
+        <h1>YOUR ONE-STOP SHOP FOR TBW*</h1>
+        <p>*Train-Based Whinging</p>
         <Link className="btn btn-block" to="/select-station">Start</Link>
       </section>
     );

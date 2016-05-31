@@ -3,7 +3,7 @@
     .btn-group-item {
       width: 420px;
       position: absolute;
-      bottom: 0;
+      bottom: 40px;
       padding: 0 20px;
     }
   }
