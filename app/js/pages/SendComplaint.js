@@ -27,6 +27,18 @@ class SendComplaint extends Component {
     const stationOperatorCode = filteredStations[0].stationOperator;
     const stationOperator =
       config.stationOperators.filter(o => o.code === stationOperatorCode)[0];
+
+    const emailSubject =
+      station +
+      ' - ' +
+      subject +
+      ' - ' +
+      'complaint!';
+
+    const emailSignature =
+      'This complaint was built with ' +
+      'Rail FYI: http://www.rail.fyi';
+
     const finalMessage =
       message
         .buildInProgressMessageParts(station, subject, description)
@@ -34,18 +46,22 @@ class SendComplaint extends Component {
         .join(' ');
     emailEndpoint =
       stationOperator.email
-      ? "mailto:"
+      ? 'mailto:'
           + stationOperator.email
-          + "?body="
+          + '?subject='
+          + encodeURI(emailSubject)
+          + '&body='
           + encodeURI(finalMessage)
+          + '%0D%0A%0D%0A' // double break line
+          + encodeURI(emailSignature)
       : null;
     tweetEndpoint =
       stationOperator.twitter
-      ? "http://twitter.com/home/?status="
+      ? 'http://twitter.com/home/?status='
           + stationOperator.twitter
-          + " "
+          + ' '
           + finalMessage
-          + " via %23RailFYI"
+          + ' via %23RailFYI'
       : null;
 
     return { emailEndpoint, tweetEndpoint };
@@ -72,7 +88,8 @@ class SendComplaint extends Component {
 SendComplaint.propTypes = {
   station: PropTypes.string,
   subject: PropTypes.string,
-  description: PropTypes.string
+  description: PropTypes.string,
+  dispatch: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => {
