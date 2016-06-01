@@ -7,7 +7,6 @@ $blue: #1168F3;
 $brand-primary: $blue;
 $brand-primary-dark: color($blue shade(50%));
 
-
 /* Type Sizes */
 $tera: 72px;
 $giga: 60px;
@@ -31,4 +30,5 @@ $body-font-size: $delta;
 $bpoint-small: 500px;
 $bpoint-medium: 768px;
 $bpoint-large: 1024px;
+$bpoint-iphone-5-height: 568px;
 $max-width: $bpoint-large;

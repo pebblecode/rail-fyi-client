@@ -7,8 +7,11 @@
   bottom: 0;
   text-align: center;
 
+  @media screen and ( max-height: $bpoint-iphone-5-height) {
+    position: fixed;
+  }
+
   a {
     line-height: 30px;
   }
 }
-

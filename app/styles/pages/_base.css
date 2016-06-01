@@ -4,7 +4,7 @@
 }
 
 .content-container {
-  @media screen and ( min-width: $bpoint-large) {
+  @media screen and ( min-width: $bpoint-large ) {
     padding: 10px 440px 10px 20px;
   }
 }
@@ -14,7 +14,7 @@
   margin-top: 20px;
   bottom: 0;
 
-  @media screen and ( min-width: $bpoint-large) {
+  @media screen and ( min-width: $bpoint-large ) {
     height: calc(100% - 85px);
     width: 420px;
     position: absolute;
@@ -23,15 +23,21 @@
     border-left: 1px solid $brand-primary;
   }
 
-  @media screen and ( max-width: $bpoint-small) {
+  @media screen and ( max-width: $bpoint-small ) {
     position: fixed;
+    bottom: 40px;
+  }
+
+  /*for screens smaller in height than the iphone 5*/
+  @media screen and ( max-height: $bpoint-iphone-5-height ) {
+    position: relative;
     bottom: 40px;
   }
 }
 
 /* Button Lists */
 .btn-group-list {
-  @media screen and ( min-width: $bpoint-large) {
+  @media screen and ( min-width: $bpoint-large ) {
     width: 420px;
     position: absolute;
     bottom: 40px;

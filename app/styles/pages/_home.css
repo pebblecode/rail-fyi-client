@@ -6,6 +6,10 @@
 
   .btn {
     margin: 60px auto 40px;
+
+    @media screen and ( max-height: $bpoint-iphone-5-height ) {
+      margin: 20px auto 40px;
+    }
   }
 }
 
